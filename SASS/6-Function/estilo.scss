@@ -1,0 +1,54 @@
+// VARIABLES
+$name: a;
+$base_font-size: 16px;
+// ******************
+
+
+* { margin: 0; padding: 0; }
+
+// * descomentar para mostrar parámetros
+// * asignar valores por defecto a los parámetros
+
+@mixin set-w-h($s1: 500, $s2: 200) {
+	width: #{$s1}px; height: #{$s2}px;
+}
+
+@function toem($target, $context: $base_font-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+   // Note: We need the "* 1em" there for Sass to correctly append the unit value. You can also use "+ 0em" for the same purpose.
+}
+
+body {
+	font-size: $base_font-size;
+	h1 { color: white; 
+		font-weight: bold; 
+		text-align: center; 
+		text-shadow: 1px 1px 1px #505050; 
+		font-size: 25px; text-decoration: underline; background: #717171; padding: 25px;
+	}
+
+	.block { 
+		background: black; width: 50px; height: 50px; margin: 10px; 
+		@include set-w-h;
+		p { color: white; }
+		&.one { 
+			font-size: 32px;
+			.box {
+				@include set-w-h (50, 50);
+				background: grey;
+				width: toem(100px);
+				//Mostrar lo que ocurre si no se pasa el font-size
+				// width: toem(100px, 32px);
+			}
+		}
+		&.two { 
+			font-size: 16px;
+			.box {
+				@include set-w-h (50, 50);
+				background: grey;
+				width: toem(100px);
+			}
+		}
+	}
+}

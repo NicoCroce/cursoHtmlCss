@@ -1,0 +1,58 @@
+* { margin: 0; padding: 0; }
+
+h1 { color: white; font-weight: bold; text-align: center; text-shadow: 1px 1px 1px #505050; font-size: 25px; text-decoration: underline; background: #717171; padding: 25px;}
+
+.base { 
+	width: 100px; height: 100px; background: black; margin: 50px; display: inline-block;
+}
+
+.one { 
+	background: rgba(255, 0, 0, 0.52); 
+	animation-name: animOne;
+	animation-duration: 1s;
+	/*animation-timing-function: ease-in-out;*/
+	animation-iteration-count: infinite;
+}
+
+.two:hover {
+	animation-name: animTwo;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.three:hover { 
+	background: rgba(0, 0, 255, 0.52);
+	animation: animThree 2s ease infinite;
+}
+
+a { margin-top: 44px; display: block; }
+
+
+@keyframes animOne {
+	0% {transform: scale3d(1, 1, 1);}
+	70% {
+		transform: scale3d(1.5, 1.5, 1.5);
+	}
+	80% {
+		transform: scale3d(0.6, 0.6, 0.6);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@keyframes animTwo {
+	0% {background: rgba(0, 255, 0, 0.52); border-radius: 0px;}
+	100% {
+		border-radius: 50px;;
+	}
+}
+
+@keyframes animThree {
+	0% {
+		    transform: rotate3d(0,0,1, 0deg);
+	}
+	100% {
+		    transform: rotate3d(0,0,1, 360deg);
+	}
+}

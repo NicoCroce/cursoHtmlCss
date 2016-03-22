@@ -1,0 +1,13 @@
+/*Descomentar uno por uno para mostrar especificidad*/
+/*body p { color:blue; }*/
+/*p.texto { color: blue; }*/
+
+p { color: red; font-weight: bold; text-align: center; text-shadow: 1px 1px 1px #505050; font-size: 25px; text-decoration: underline; background: #FFB4B4; padding: 25px;}
+
+.base { width: 100px; height: 100px; background: black; }
+
+.base.cuadrado { border: 20px solid red; margin: 20px; }
+
+.base.circulo { border-radius: 50px; background: #0D0429; box-shadow: 2px 2px 3px 1px #6F6F6F; }
+
+a { margin-top: 44px; display: block; }

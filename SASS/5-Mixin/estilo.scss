@@ -1,0 +1,78 @@
+// VARIABLES
+$name: a;
+
+// ******************
+
+
+* { margin: 0; padding: 0; }
+
+@mixin set-w-h {
+	width: 40px; height: 40px;
+}
+
+//*************************************    SECCIÓN  parámetros    *************************************
+
+// * descomentar para mostrar parámetros
+// * asignar valores por defecto a los parámetros
+
+// @mixin set-w-h($s1, $s2) {
+// 	width: #{$s1}px; height: #{$s2}px;
+// }	
+
+//************************************************************************************
+
+//*************************************    SECCIÓN  expresiones    *************************************
+
+@mixin conditional($value){
+	@if $value == 'a' {
+		border-radius: 5px; border-color: blue;
+	}@else if $value == 'b' {
+		border-radius: 20px;
+	}@else if $value == 'c' {
+		border-radius: 50px;
+	}
+}
+
+//************************************************************************************
+
+@mixin add-border {
+	border: 2px solid red;
+	>div {
+		background: green;
+		@include set-w-h;
+		// @include set-w-h(40, 40);
+	}
+}
+
+//*************************************    SECCIÓN  ejemplo. No se usa    *************************************
+
+// @mixin vertical-align() {
+//     position: relative;
+//     margin: 0 auto;
+//     top: 50%;
+//     -webkit-transform: translateY(-50%);
+//     -ms-transform: translateY(-50%);
+//     transform: translateY(-50%);
+// }
+
+//************************************************************************************
+
+
+body {
+	h1 { color: white; 
+		font-weight: bold; 
+		text-align: center; 
+		text-shadow: 1px 1px 1px #505050; 
+		font-size: 25px; text-decoration: underline; background: #717171; padding: 25px;
+	}
+
+	.block { 
+		background: black; width: 50px; height: 50px; margin: 10px; 
+		@include add-border;
+		&:nth-of-type(2) { @include conditional('a'); }
+		&:nth-of-type(3) { @include conditional('b'); }
+		&:nth-of-type(4) { @include conditional('c'); }
+
+	}
+	//generar llamado mediante extend. Crear una clase nueva.
+}

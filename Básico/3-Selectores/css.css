@@ -1,0 +1,31 @@
+p { color: red; font-weight: bold; }
+#id { color: black; }
+.clase { color: yellow; }
+
+/*Hermano*/
+/*.clase.uno { background: grey; }*/
+
+/*Hijo*/
+/*.contenido .clase { border: 1px solid red; }*/
+
+/*Hermano*/
+/*p.clase { color: green; }*/
+
+/*////////////////*/
+/*Selectores avanzados*/
+/*////////////////*/
+
+/*El próximo p que se encuentren inmediantamente luego de un div, que se encuentra en el mismo nivel es decir que no es un hijo.*/
+/*div + p { color: blue; background: grey; }*/
+
+/*Todos los p que se encuentren inmediantamente luego de un div, que se encuentra en el mismo nivel es decir que no es un hijo.*/
+/*div ~ p { color: green; background: grey; }*/
+
+/*Todos los p que son hijos de div.*/
+/*div > p { color:  #00FFE9; background: grey; }*/
+
+
+/*[nico="curso"] { color: blue; font-weight: 600; }*/
+
+/*p:hover { background: black; color: white;}*/
+
