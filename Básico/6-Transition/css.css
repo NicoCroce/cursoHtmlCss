@@ -13,4 +13,5 @@ h1 { color: white; font-weight: bold; text-align: center; text-shadow: 1px 1px 1
 .two:hover { background: rgba(0, 255, 0, 0.52); border-radius: 50px;}
 .three:hover { background: rgba(0, 0, 255, 0.52); transform: skew(-180deg); }
 
-a { margin-top: 44px; display: block; }
+hr { margin: 50px 0; }
+a { line-height: 50px; }

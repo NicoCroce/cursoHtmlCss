@@ -8,5 +8,6 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center; text-shadow: 1px 1px
 .base { width: 100px; height: 100px; background: black; }
 .circulo { background: blue; }
 
-/*Modificar a por line-height*/
-a { margin-top: 40px; display: block; }
+/*Modificar a por line-height. Solo se puede utilizar con textos.  */
+hr { margin: 50px 0; }
+a { line-height: 50px; }

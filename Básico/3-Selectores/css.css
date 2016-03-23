@@ -29,3 +29,5 @@ p { color: red; font-weight: bold; }
 
 /*p:hover { background: black; color: white;}*/
 
+hr { margin: 50px 0; }
+a { line-height: 50px; }
