@@ -1,0 +1,59 @@
+/* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+// @import "compass/reset";
+@import "compass";
+@import "animations";
+
+//*************************************    SECCIÓN documentación    *************************************
+
+    // http://www.w3schools.com/cssref/css3_pr_animation-direction.asp
+    // http://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp
+
+//************************************************************************************
+
+//*************************************    SECCIÓN  descomentar para mostrar animaciones    *************************************
+.mask {
+    height: 300px; width: 370px; background: black; border-radius: 5px; border: 1px solid #AFAFAF; position: relative; overflow: hidden;
+    .img { 
+        width: 100%; height: 100%;
+        @include transition(all .3s ease);        
+        // @include transform3d(scale3d(1.1 1.1 1.1));
+    } 
+    .box {
+        line-height: 6; text-align: center; position: absolute; width: 100%;
+        color: #FDFDFD; font-weight: bolder; text-shadow: 2px 2px 1px black; text-transform: uppercase;
+        @include opacity(0);
+        @include transition(all .3s ease);
+        @include background-image(linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 100%));
+        // @include transform3d(translate3d(0, 0, 0));
+        &.bottom { 
+            bottom: 0;
+            @include transform3d(translate3d(0, 100%, 0));
+            @include background-image(linear-gradient(bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 100%));
+        }
+        &.top {
+            top: 0;
+            @include transform3d(translate3d(0, -100%, 0)); 
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        .img { 
+            @include transform3d(scale3d(1.1, 1.1, 1.1));
+            @include filter(blur(2px) grayscale(40%));
+            // @include opacity(.7);
+        }   
+        .box { 
+            @include opacity(1); 
+            @include transform3d(translate3d(0, 0, 0)); 
+        }
+        // .top { @include animation(showTop .5s linear forwards alternate); }
+        // .bottom { @include animation(showBottom .5s linear forwards alternate); }
+        //animation-direction    animation-fill-mode
+    } 
+}
+
+//************************************************************************************
