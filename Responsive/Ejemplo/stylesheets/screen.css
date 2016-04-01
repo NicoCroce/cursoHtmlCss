@@ -2,59 +2,111 @@
 * In this file you should write your main styles. (or centralize your imports)
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@keyframes showTop {
-  0% {
-    -moz-transform: translate3d(0, -80%, 0);
-    -webkit-transform: translate3d(0, -80%, 0);
-    transform: translate3d(0, -80%, 0);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-  }
-  100% {
-    -moz-transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
+/* line 1, ../sass/_base.scss */
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-@keyframes showBottom {
-  0% {
-    -moz-transform: translate3d(0, 100%, 0);
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-  }
-  60% {
-    -moz-transform: translate3d(0, 20%, 0);
-    -webkit-transform: translate3d(0, 20%, 0);
-    transform: translate3d(0, 20%, 0);
-  }
-  80% {
-    -moz-transform: translate3d(0, 40%, 0);
-    -webkit-transform: translate3d(0, 40%, 0);
-    transform: translate3d(0, 40%, 0);
-  }
-  100% {
-    -moz-transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-  }
+
+/* line 5, ../sass/_base.scss */
+a {
+  color: #EAEAEA;
 }
+
+/* line 7, ../sass/_base.scss */
+h1 {
+  text-align: center;
+  font-size: 1.3em;
+  background: #2273ca;
+  color: white;
+  padding: 25px 0;
+  margin: 30px 0;
+  -moz-box-shadow: 0 -5px rgba(62, 62, 62, 0.61) inset;
+  -webkit-box-shadow: 0 -5px rgba(62, 62, 62, 0.61) inset;
+  box-shadow: 0 -5px rgba(62, 62, 62, 0.61) inset;
+}
+/* line 11, ../sass/_base.scss */
+h1:first-of-type {
+  margin-top: 0;
+}
+
+/* line 14, ../sass/_base.scss */
+.main-nav {
+  background: #001E65;
+  width: 100%;
+  line-height: 4;
+  margin-bottom: 2px;
+  color: gainsboro;
+}
+/* line 17, ../sass/_base.scss */
+.main-nav li {
+  display: inline-block;
+  color: #929292;
+  padding: 0 30px;
+  cursor: pointer;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -moz-box-shadow: 0 -5px #49A1FF inset;
+  -webkit-box-shadow: 0 -5px #49A1FF inset;
+  box-shadow: 0 -5px #49A1FF inset;
+}
+/* line 20, ../sass/_base.scss */
+.main-nav li:last-of-type {
+  float: right;
+  background: #2273CA;
+}
+/* line 22, ../sass/_base.scss */
+.main-nav li:last-of-type:hover {
+  background: #479FFF;
+}
+/* line 25, ../sass/_base.scss */
+.main-nav li:hover {
+  background: #2F55AF;
+  -moz-box-shadow: 0 -5px #CA229E inset;
+  -webkit-box-shadow: 0 -5px #CA229E inset;
+  box-shadow: 0 -5px #CA229E inset;
+}
+
+/* line 32, ../sass/_base.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 34, ../sass/_base.scss */
+.section {
+  padding: 20px 5%;
+  -moz-box-shadow: 0 0 5px #717171;
+  -webkit-box-shadow: 0 0 5px #717171;
+  box-shadow: 0 0 5px #717171;
+  margin-top: -2px;
+}
+
+/* line 40, ../sass/_base.scss */
+footer {
+  height: 150px;
+  background: #2273ca;
+  margin-top: 30px;
+}
+
 /* line 17, ../sass/screen.scss */
 .mask {
-  height: 300px;
-  width: 370px;
+  height: 280px;
+  width: 319px;
   background: black;
   border-radius: 5px;
   border: 1px solid #AFAFAF;
   position: relative;
   overflow: hidden;
+  display: inline-block;
 }
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 .mask .img {
   width: 100%;
   height: 100%;
@@ -63,7 +115,7 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .mask .box {
   line-height: 6;
   text-align: center;
@@ -86,7 +138,7 @@
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 .mask .box.bottom {
   bottom: 0;
   -moz-transform: translate3d(0, 100%, 0);
@@ -99,18 +151,18 @@
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 100%);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .mask .box.top {
   top: 0;
   -moz-transform: translate3d(0, -100%, 0);
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .mask:hover {
   cursor: pointer;
 }
-/* line 42, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .mask:hover .img {
   -moz-transform: scale3d(1.1, 1.1, 1.1);
   -webkit-transform: scale3d(1.1, 1.1, 1.1);
@@ -118,7 +170,7 @@
   -webkit-filter: blur(2px) grayscale(40%);
   filter: blur(2px) grayscale(40%);
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .mask:hover .box {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;

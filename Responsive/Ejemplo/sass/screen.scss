@@ -3,8 +3,8 @@
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 // @import "compass/reset";
-@import "compass";
-@import "animations";
+@import "compass/css3";
+@import "base";
 
 //*************************************    SECCIÓN documentación    *************************************
 
@@ -15,7 +15,8 @@
 
 //*************************************    SECCIÓN  descomentar para mostrar animaciones    *************************************
 .mask {
-    height: 300px; width: 370px; background: black; border-radius: 5px; border: 1px solid #AFAFAF; position: relative; overflow: hidden;
+    height: 280px; width: 319px; background: black; border-radius: 5px; border: 1px solid #AFAFAF; position: relative; overflow: hidden;
+    display: inline-block;
     .img { 
         width: 100%; height: 100%;
         @include transition(all .3s ease);        
