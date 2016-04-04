@@ -15,6 +15,9 @@
 /* line 5, ../sass/_base.scss */
 a {
   color: #EAEAEA;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-family: sans-serif;
 }
 
 /* line 7, ../sass/_base.scss */
@@ -81,10 +84,10 @@ h1:first-of-type {
 
 /* line 34, ../sass/_base.scss */
 .section {
-  padding: 20px 5%;
-  -moz-box-shadow: 0 0 5px #717171;
-  -webkit-box-shadow: 0 0 5px #717171;
-  box-shadow: 0 0 5px #717171;
+  padding: 4% 5%;
+  -moz-box-shadow: 0 0 10px #717171;
+  -webkit-box-shadow: 0 0 10px #717171;
+  box-shadow: 0 0 10px #717171;
   margin-top: -2px;
 }
 

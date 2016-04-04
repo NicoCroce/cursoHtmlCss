@@ -2,7 +2,7 @@
 	@include box-sizing(border-box); 
 }
 
-a { color: #EAEAEA; }
+a { color: #EAEAEA; text-transform: uppercase; font-size: 0.8em; font-family: sans-serif; }
 
 h1 { 
 	text-align: center; font-size: 1.3em; background: rgb(34, 115, 202);
@@ -32,8 +32,8 @@ h1 {
 .wrapper { width: 80%; margin: 0 auto; }
 
 .section { 
-	padding: 20px 5%;
-	@include box-shadow(0 0 5px #717171);
+	padding: 4% 5%;
+	@include box-shadow(0 0 10px #717171);
     margin-top: -2px;
 }
 
