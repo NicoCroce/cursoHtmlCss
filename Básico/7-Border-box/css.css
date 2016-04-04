@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; border: 0; }
+
+h1 { color: #D8D8D8; font-weight: bold; text-align: center; 
+	text-shadow: 1px 1px 1px #505050; font-size: 25px; 
+	text-decoration: underline; background: #676767; padding: 25px;
+}
+
+.container { 
+	width: 50%; background: rgba(0, 0, 0, 0.2); 
+	margin: 0 auto;
+}
+
+.block { width: 49%; display: inline-block; }
+
+.block {     width: 49%;
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify; }
+
+hr { margin: 50px 0; }
+a { line-height: 50px; }
+
+//*************************************    SECCIÓN  TEMAS    *************************************
+	* Display - Padre
+	* Order - Hijos
+	* Flex-direction - Padre
+	* Flex-grow - Hijo
+	* Flex-shrink
+	* Flex-wrap - Padre
+	* Flex-flow - Padre  -- Sustituye a flex-direction flex-wrap
+	* Flex-basis - Hijo -- Determina espacio a ocupar.
+	* Justify-content - Padre 
+	* Align-self - Hijo 
+	* Align-items - Padre
+	* Align-content 
+//************************************************************************************

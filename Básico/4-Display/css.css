@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; }
 
 /*Convertir un p en elemento en línea*/
-h1 { color: #D8D8D8; font-weight: bold; text-align: center; text-shadow: 1px 1px 1px #505050; font-size: 25px; text-decoration: underline;     background: #676767; padding: 25px;}
+h1 { color: #D8D8D8; font-weight: bold; text-align: center; text-shadow: 1px 1px 1px #505050; font-size: 25px; text-decoration: underline; background: #676767; padding: 25px;}
 
 
 /*Convertir a los div en elementos en línea. Mostrar como eliminar el margin. Eliminar el </li> */
@@ -9,5 +9,17 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center; text-shadow: 1px 1px
 .circulo { background: blue; }
 
 /*Modificar a por line-height. Solo se puede utilizar con textos.  */
-hr { margin: 50px 0; }
+hr { margin: 1% 0; }
 a { line-height: 50px; }
+
+
+//*************************************    SECCIÓN  Hacer    *************************************
+
+	* Mostrar diferencias entre elementos en línea y elementos en bloque.
+	* Mostrar los cambios en los textos.
+	* Mostrar los cambios en los ul
+	* Mostrar que a los elementos en línea no les afecta el margin.
+	* Mostrar line-height.
+
+
+//***********************************************************************************
