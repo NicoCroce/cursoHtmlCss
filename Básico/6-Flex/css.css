@@ -15,10 +15,6 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 .two { background: rgba(0, 255, 0, 0.52) }
 .three { background: rgba(0, 0, 255, 0.52) }
 
-/*.inside { width: 100px; height: 100px; background: black;}*/
-
-.base-f { width: 100px; height: 100px; margin: 5px; }
-
 hr { margin: 50px 0; }
 a { line-height: 50px; }
 
@@ -27,15 +23,15 @@ a { line-height: 50px; }
 
 //*************************************    SECCIÓN  TEMAS    *************************************
 	* Display - Padre
-	* Order - Hijos
 	* Flex-direction - Padre
-	* Flex-grow - Hijo
-	* Flex-shrink
 	* Flex-wrap - Padre
 	* Flex-flow - Padre  -- Sustituye a flex-direction flex-wrap
-	* Flex-basis - Hijo -- Determina espacio a ocupar.
-	* Justify-content - Padre 
-	* Align-self - Hijo 
+	* Justify-content - Padre
 	* Align-items - Padre
-	* Align-content 
+	* Align-content
+	* Order - Hijos
+	* Flex-grow - Hijo
+	* Flex-shrink	
+	* Flex-basis - Hijo -- Determina espacio a ocupar.	 
+	* Align-self - Hijo 	 
 //************************************************************************************
