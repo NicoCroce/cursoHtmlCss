@@ -6,32 +6,23 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 }
 
 .container { 
-	width: 50%; background: rgba(0, 0, 0, 0.2); 
-	margin: 0 auto;
+	width: 50%; background: rgba(0, 0, 0, 0.2); margin: 0 auto; overflow: auto
 }
 
-.block { width: 49%; display: inline-block; }
-
-.block {     width: 49%;
-    display: inline-block;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: justify; }
+.block {
+	width: 50%;
+	float: left;
+    /*padding: 20px;*/
+    text-align: justify;
+}
 
 hr { margin: 50px 0; }
 a { line-height: 50px; }
 
 //*************************************    SECCIÓN  TEMAS    *************************************
-	* Display - Padre
-	* Order - Hijos
-	* Flex-direction - Padre
-	* Flex-grow - Hijo
-	* Flex-shrink
-	* Flex-wrap - Padre
-	* Flex-flow - Padre  -- Sustituye a flex-direction flex-wrap
-	* Flex-basis - Hijo -- Determina espacio a ocupar.
-	* Justify-content - Padre 
-	* Align-self - Hijo 
-	* Align-items - Padre
-	* Align-content 
+	* Mostrar resultado con 'inline'
+	* Aplicar padding.
+	* Aplicar overflow la padre
+	* box-sizing: border-box;
+	* Aplicar borde. 
 //************************************************************************************
