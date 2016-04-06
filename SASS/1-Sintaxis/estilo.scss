@@ -5,7 +5,6 @@ body {
 
 	.base { 
 		width: 100px; height: 100px; background: red; margin: 50px; display: inline-block;
-		&:hover { background: white; }
 	}
 
 	.one { background: rgba(255, 0, 0, 0.52); }
@@ -15,7 +14,7 @@ body {
 		&.two { 
 			background: #43D242;
 			.one { 
-				background: rgba(255, 100, 0, 0.52); 
+				background: rgba(65, 0, 255, 0.52); 
 				// &:hover { background: white; }
 			}
 		}
@@ -27,3 +26,11 @@ body {
 
 	a { margin-top: 44px; display: block; }
 }
+
+//*************************************    SECCIÓN  Explicar    *************************************
+
+	// * Anidamiento - Elementos hijos
+	// * Clases hermanas
+	// * Eliminar & de .two y mostrar el resultado. 
+
+//************************************************************************************
