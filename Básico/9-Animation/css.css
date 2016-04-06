@@ -10,7 +10,7 @@ h1 { color: white; font-weight: bold; text-align: center; text-shadow: 1px 1px 1
 	background: rgba(255, 0, 0, 0.52); 
 	animation-name: animOne;
 	animation-duration: 1s;
-	/*animation-timing-function: ease-in-out;*/
+	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
 
@@ -30,30 +30,38 @@ a { line-height: 50px; }
 
 
 @keyframes animOne {
-	0% {transform: scale3d(1, 1, 1);}
-	70% {
+	0% {transform: scale3d(1, 1, 1); background: rgba(255, 0, 0, 0.52);}
+	50% {
 		transform: scale3d(1.5, 1.5, 1.5);
+		background: rgba(82, 0, 0, 0.85);
 	}
 	80% {
 		transform: scale3d(0.6, 0.6, 0.6);
 	}
 	100% {
-		transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1); background: rgba(255, 0, 0, 0.52);
 	}
 }
 
 @keyframes animTwo {
-	0% {background: rgba(0, 255, 0, 0.52); border-radius: 0px;}
+	0% { border-radius: 0px;}
+	20% { background: rgba(0, 255, 0, 0.52); }
 	100% {
-		border-radius: 50px;;
+		border-radius: 50px; background: rgba(0, 255, 0, 0.52);
 	}
 }
 
 @keyframes animThree {
 	0% {
 		    transform: rotate3d(0,0,1, 0deg);
+		    background: rgba(0, 0, 255, 0.52);
+	}50%{
+		background: yellow;
+	}70%{
+		background: green;
 	}
 	100% {
 		    transform: rotate3d(0,0,1, 360deg);
+		    background: rgba(0, 0, 255, 0.52);
 	}
 }
