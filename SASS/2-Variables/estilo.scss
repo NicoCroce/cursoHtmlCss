@@ -1,5 +1,6 @@
 // VARIABLES
 $color: #005165 !global;
+$color-two: #5BB100;
 $size: 20px;
 $class: "base";
 $var: 3;
@@ -14,8 +15,18 @@ body {
 
 	.#{$class} { 
 		width: $size*3; height: ($size + 2px)*$var; background: black; margin: 50px; display: inline-block;
+		&.two { background: $color-two; }
 		&:hover { background: $color; cursor: pointer;}
+
 	}
 
 	a { margin-top: 44px; display: block; }
 }
+
+//*************************************    SECCIÓN  Explicar    *************************************
+
+	// * Cada tipo de variable
+	// * Concatenar string. 
+	// * Operaciones
+
+//************************************************************************************

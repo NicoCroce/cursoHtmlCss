@@ -1,5 +1,5 @@
 // VARIABLES
-$name: a;
+$char: b;
 
 // ******************
 
@@ -14,21 +14,22 @@ body {
 		font-size: 25px; text-decoration: underline; background: #717171; padding: 25px;
 	}
 
+	div {
+		height: 20px;
+		margin: 10px;
+	}
+
 	p {
 		font-size: 30px; 
-	    @if $name == a {
+	    @if $char == a {
 	      color: blue;
-	    } @else if $name == b {
+	    } @else if $char == b {
 	      color: red;
-	    } @else if $name == c {
+	    } @else if $char == c {
 	      color: green;
 	    } @else {
 	      color: black;
 	    }
-	}
-	div {
-		height: 20px;
-		margin: 10px;
 	}
 
 	@for $i from 1 through 3 {
@@ -57,19 +58,27 @@ body {
 	    $cont: $cont+1;
 	}
 	
-	//*************************************    SECCIÓN  Solo un ejemplo    *************************************
+	//************    ejemplo    ***************
 	
-			// @each $animal, $color, $cursor in (puma, black, default),
+	// @each $animal, $color, $cursor in (puma, black, default),
  //                                  (dog, blue, pointer),
  //                                  (tiger, white, move) {
-	// 	.itemss-#{$cont} {
+	// 	.item-#{$cont} {
 	// 		background-image: url('/images/#{$animal}.png');
 	// 		border: 2px solid $color;
 	// 		cursor: $cursor;
 	// 	}
+	// 	$cont: $cont +1;
 	// }
 	
 	//************************************************************************************
 
+//***********    SECCIÓN   Explicar   **************
+
+	// * Cambiar valores de $char. (@if)
+	// * @for @each @while.
+	// * Explicar ejemplo.
+
+//************************************************************************************
 
 }
