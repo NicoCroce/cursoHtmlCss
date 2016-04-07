@@ -8,7 +8,7 @@
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
 /* line 7, ../sass/_ie.scss */
-div {
+h1 {
   color: red;
 }
 
@@ -18,32 +18,4 @@ div {
 /* line 5, ../sass/_print.scss */
 p {
   background: #C5DCFF;
-}
-
-/* line 11, ../sass/screen.scss */
-.wrapper {
-  height: 300px;
-  width: 80%;
-  background: #C3C3C3;
-  cursor: pointer;
-  -moz-box-shadow: 0 0 10px black;
-  -webkit-box-shadow: 0 0 10px black;
-  box-shadow: 0 0 10px black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  -moz-transform: translate3d(-90%, 0, 0);
-  -webkit-transform: translate3d(-90%, 0, 0);
-  transform: translate3d(-90%, 0, 0);
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-/* line 24, ../sass/screen.scss */
-.wrapper:hover {
-  -moz-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
 }

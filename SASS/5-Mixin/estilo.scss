@@ -1,19 +1,13 @@
-// VARIABLES
-$name: a;
-
-// ******************
-
-
 * { margin: 0; padding: 0; }
-
-@mixin set-w-h {
-	width: 40px; height: 40px;
-}
 
 //*************************************    SECCIÓN  parámetros    *************************************
 
 // * descomentar para mostrar parámetros
 // * asignar valores por defecto a los parámetros
+
+@mixin set-w-h {
+	width: 40px; height: 40px;
+}
 
 // @mixin set-w-h($s1, $s2) {
 // 	width: #{$s1}px; height: #{$s2}px;
@@ -23,6 +17,17 @@ $name: a;
 
 //*************************************    SECCIÓN  expresiones    *************************************
 
+@mixin add-border {
+	border: 2px solid red;
+	>div {
+		background: green;
+		@include set-w-h;
+		// @include set-w-h(20, 40);
+	}
+}
+
+//************************************************************************************
+
 @mixin conditional($value){
 	@if $value == 'a' {
 		border-radius: 5px; border-color: blue;
@@ -30,17 +35,6 @@ $name: a;
 		border-radius: 20px;
 	}@else if $value == 'c' {
 		border-radius: 50px;
-	}
-}
-
-//************************************************************************************
-
-@mixin add-border {
-	border: 2px solid red;
-	>div {
-		background: green;
-		@include set-w-h;
-		// @include set-w-h(40, 40);
 	}
 }
 
@@ -76,3 +70,13 @@ body {
 	}
 	//generar llamado mediante extend. Crear una clase nueva.
 }
+
+//*************************************    SECCIÓN  Ejemplo    *************************************
+
+	// * Comentar que los mixins pueden tener parámetros o no.
+	// * Explicar que los mixins ejecutan expresiones y pueden insertar propiedades al elemento que los invocó. 
+	// * Los mixins pueden agregar estilos a los elementos hijos.
+	// * Mostrar con parámetros.
+	// * Asignarle valores a los parámetros.
+
+//************************************************************************************
