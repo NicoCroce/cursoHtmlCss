@@ -4,6 +4,8 @@
 
 html, body { height: 100%; width: 100%; }
 
+a, .button, button { cursor: pointer; }
+
 $color-blue: #03A9F4;	
 
 body { font-size: 16px; }
@@ -16,6 +18,8 @@ h1 {
     @include box-shadow(0 -5px rgba(62, 62, 62, 0.61) inset);
     &:first-of-type { margin-top: 0; }
 }
+
+.button { width: 45%; margin: 0; }
 
 .no-scroll { overflow: hidden; }
 
@@ -119,3 +123,45 @@ h1 {
 }
 
 footer { height: 150px; background: rgb(34, 115, 202); margin-top: 30px; }
+
+#modalLogin {
+	position: fixed;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0; 
+	visibility: hidden;
+	@include transition(all .6s ease);
+	&:target { opacity: 1; visibility: visible; }
+	.content { 
+		width: 80%; height: 80%; display: flex;
+    	justify-content: center; align-items: center; height: 80%;
+    	background: #607D8B; border: 10px solid rgba(255, 255, 255, 0.42);
+    border-radius: 10px;
+    form {
+    	width: 50%;
+    	h2 { color: #E4E4E4; border-bottom: 1px solid #D0D0D0; margin-bottom: 20px;
+    padding-bottom: 10px; }
+    	.input { width: 100%; line-height: 2; padding: 10px; 
+			margin-bottom: 20px; border: 0;
+    	}
+    	.button { 
+    		padding: 10px; width: 45%;
+    		&.submit { border: 0; background: #03A9F4; color: white;
+    			text-transform: uppercase;
+    			font-size: 0.8em;
+    			&:hover { background: #2FBBFB; }
+    		}
+    	}
+    	a { float: right; text-align: right; width: auto; padding: 14px 0; }
+    }
+	}
+}

@@ -1,126 +1,138 @@
 <!DOCTYPE html>
 <html id="html">
-<head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
-	<link rel=stylesheet href="./stylesheets/screen.css">
-</head>
-<body class="wrapper">
-	<div id="bgPage" class="bg-page"></div>
-    <div id="btMenu" class="bt-menu" onclick="openMenu()">
-        <div class="first-line"></div>
-        <div class="second-line"></div>
-        <div class="third-line"></div>
-    </div>
-    <div id="menuMobile" class="menu-mobile hidden">
-        <ul class="nav-bar-menu">
-            <li><a id="homeMobile" class="bt-section active" href="#homeSection" title="">Inicio</a></li>
-            <li><a id="companyMobile" class="bt-section" href="#companySection" title="">Empresa</a></li>
-            <li><a id="productsMobile" class="bt-section" href="#productsSection" title="">Productos</a></li>
-            <li><a id="contactMobile" class="bt-section" href="#contactSection" title="">Contacto</a></li>
-        </ul>
-    </div>
-	<nav class="main-nav">
-	    <ul>
-	        <li class="options"><a href="#">Inicio</a>
-		    <li class="options"><a href="#">Productos</a>
-		    <li class="options"><a href="#">Contacto</a>
-		    <li><a href="">Login</a>
-	    </ul>
-	</nav>
-	<section class="section-content">
-		<h1>MOTOROLA</h1>
-		<section class="section-products">
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+		<link rel=stylesheet href="./stylesheets/screen.css">
+	</head>
+	<body class="wrapper">
+		<div id="bgPage" class="bg-page"></div>
+		<div id="btMenu" class="bt-menu" onclick="openMenu()">
+			<div class="first-line"></div>
+			<div class="second-line"></div>
+			<div class="third-line"></div>
+		</div>
+		<div id="menuMobile" class="menu-mobile hidden">
+			<ul class="nav-bar-menu">
+				<li><a id="homeMobile" class="bt-section active" href="#homeSection" title="">Inicio</a></li>
+				<li><a id="companyMobile" class="bt-section" href="#companySection" title="">Empresa</a></li>
+				<li><a id="productsMobile" class="bt-section" href="#productsSection" title="">Productos</a></li>
+				<li><a id="contactMobile" class="bt-section" href="#contactSection" title="">Contacto</a></li>
+			</ul>
+		</div>
+		<nav class="main-nav">
+			<ul>
+				<li class="options"><a href="#">Inicio</a>
+				<li class="options"><a href="#">Productos</a>
+				<li class="options"><a href="#">Contacto</a>
+				<li><a href="#modalLogin">Login</a>
+			</ul>
+		</nav>
+		<section class="section-content">
+			<h1>MOTOROLA</h1>
+			<section class="section-products">
 				<div name="product-block" class="mask">
-				<img class="img" src="style.jpg" alt="">
-				<div class="bars">
-					<div class="box top">
-						Moto x Style
+					<img class="img" src="style.jpg" alt="">
+					<div class="bars">
+						<div class="box top">
+							Moto x Style
+						</div>
+						<div class="box bottom">
+							Android 6.0.1 Marshmallow
+						</div>
 					</div>
-					<div class="box bottom">
-						Android 6.0.1 Marshmallow
+				</div>
+				<div name="product-block" class="mask">
+					<img class="img" src="style.jpg" alt="">
+					<div class="bars">
+						<div class="box top">
+							Moto x Style
+						</div>
+						<div class="box bottom">
+							Android 6.0.1 Marshmallow
+						</div>
 					</div>
-				</div>		
-			</div>
-			<div name="product-block" class="mask">
-				<img class="img" src="style.jpg" alt="">
-				<div class="bars">
-					<div class="box top">
-						Moto x Style
+				</div>
+				<div name="product-block" class="mask">
+					<img class="img" src="style.jpg" alt="">
+					<div class="bars">
+						<div class="box top">
+							Moto x Style
+						</div>
+						<div class="box bottom">
+							Android 6.0.1 Marshmallow
+						</div>
 					</div>
-					<div class="box bottom">
-						Android 6.0.1 Marshmallow
-					</div>
-				</div>		
-			</div>
-			<div name="product-block" class="mask">
-				<img class="img" src="style.jpg" alt="">
-				<div class="bars">
-					<div class="box top">
-						Moto x Style
-					</div>
-					<div class="box bottom">
-						Android 6.0.1 Marshmallow
-					</div>
-				</div>		
-			</div>
-		</section>
-		
-		<h1>SAMSUNG</h1>
-		<section class="section-products">
-			<div name="product-block" class="mask">
-				<img class="img" src="style.jpg" alt="">
-				<div class="bars">
-					<div class="box top">
-						Moto x Style
-					</div>
-					<div class="box bottom">
-						Android 6.0.1 Marshmallow
-					</div>
-				</div>		
-			</div>
-			<div name="product-block" class="mask">
-				<img class="img" src="style.jpg" alt="">
-				<div class="bars">
-					<div class="box top">
-						Moto x Style
-					</div>
-					<div class="box bottom">
-						Android 6.0.1 Marshmallow
-					</div>
-				</div>		
-			</div>
-			<div name="product-block" class="mask">
-				<img class="img" src="style.jpg" alt="">
-				<div class="bars">
-					<div class="box top">
-						Moto x Style
-					</div>
-					<div class="box bottom">
-						Android 6.0.1 Marshmallow
-					</div>
-				</div>		
-			</div>
-		</section>
-		<footer>
+				</div>
+			</section>
 			
-		</footer>			
-	</section>
-	<script>
-		function openMenu() {
-		    var element = document.getElementById("btMenu");
-		    if (element.classList.contains('active')) {
-		    	element.classList.remove('active');
-		    	document.getElementById('html').classList.remove('no-scroll');
-		    	document.getElementById('menuMobile').classList.add('hidden');
-		    	document.getElementById('bgPage').classList.remove('visible');
-		    }else{
-		    	element.classList.add("active");
-		    	document.getElementById('html').classList.add('no-scroll');
-		    	document.getElementById('menuMobile').classList.remove('hidden');
-		    	document.getElementById('bgPage').classList.add('visible');
-		}
-		    }
-	</script>
-</body>
+			<h1>SAMSUNG</h1>
+			<section class="section-products">
+				<div name="product-block" class="mask">
+					<img class="img" src="style.jpg" alt="">
+					<div class="bars">
+						<div class="box top">
+							Moto x Style
+						</div>
+						<div class="box bottom">
+							Android 6.0.1 Marshmallow
+						</div>
+					</div>
+				</div>
+				<div name="product-block" class="mask">
+					<img class="img" src="style.jpg" alt="">
+					<div class="bars">
+						<div class="box top">
+							Moto x Style
+						</div>
+						<div class="box bottom">
+							Android 6.0.1 Marshmallow
+						</div>
+					</div>
+				</div>
+				<div name="product-block" class="mask">
+					<img class="img" src="style.jpg" alt="">
+					<div class="bars">
+						<div class="box top">
+							Moto x Style
+						</div>
+						<div class="box bottom">
+							Android 6.0.1 Marshmallow
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				
+			</footer>
+		</section>
+		<main id="modalLogin" class="modal">
+		<section class="content">
+			<form>
+				<h2>Ingrese su información</h2>
+				<input type="text" class="input" placeholder="Usuario"></input>
+				<input type="text" class="input"  placeholder="Contraseña"></input>
+				<input type="submit" class="button submit" value="Aceptar"></input>
+				<a href="#close" class="button">Cerrar</a>
+			</form>
+		</section>
+		</main>
+		<script>
+			function openMenu() {
+			var element = document.getElementById("btMenu");
+			if (element.classList.contains('active')) {
+				element.classList.remove('active');
+				document.getElementById('html').classList.remove('no-scroll');
+				document.getElementById('menuMobile').classList.add('hidden');
+				document.getElementById('bgPage').classList.remove('visible');
+			}else{
+				element.classList.add("active");
+				document.getElementById('html').classList.add('no-scroll');
+				document.getElementById('menuMobile').classList.remove('hidden');
+				document.getElementById('bgPage').classList.add('visible');
+			}
+			}
+		</script>
+	</body>
 </html>
