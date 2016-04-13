@@ -5,9 +5,6 @@ $base_font-size: 16px;
 // ******************
 * { margin: 0; padding: 0; }
 
-// * descomentar para mostrar parámetros
-// * asignar valores por defecto a los parámetros
-
 @mixin set-w-h($s1: 500, $s2: 200) {
 	width: #{$s1}px; height: #{$s2}px;
 }
@@ -41,7 +38,6 @@ body {
 			}
 		}
 		&.two { 
-			font-size: 16px;
 			.box {
 				@include set-w-h (50, 50);
 				background: grey;
@@ -58,6 +54,6 @@ body {
 	// * Aclarar que al ser una función debe retornar algo. 
 	// * Mostrar lo que ocurre si no se pasa el font-size
 	// * Descomentar @import 'prueba';
-	// * Eplicar porque es tan importante trabajar en 'em'
+	// * Explicar la importancia de trabajar en 'em'
 
 //************************************************************************************

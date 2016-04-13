@@ -57,12 +57,13 @@ body {
 	    }
 	    $cont: $cont+1;
 	}
+}
 	
 	//************    ejemplo    ***************
 	
 	// @each $animal, $color, $cursor in (puma, black, default),
- //                                  (dog, blue, pointer),
- //                                  (tiger, white, move) {
+ //                                  	 (dog, blue, pointer),
+ //                                  	 (tiger, white, move) {
 	// 	.item-#{$cont} {
 	// 		background-image: url('/images/#{$animal}.png');
 	// 		border: 2px solid $color;
@@ -75,10 +76,8 @@ body {
 
 //***********    SECCIÓN   Explicar   **************
 
-	// * Cambiar valores de $char. (@if)
+	// * Comenzar por if y cambiar valores de $char. (@if)
 	// * @for @each @while.
 	// * Explicar ejemplo.
 
 //************************************************************************************
-
-}
