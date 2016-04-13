@@ -1,0 +1,36 @@
+//  Escritorios muy anchos
+@media (max-width: 1200px) {
+	// body { background: blue; }
+}
+//------------------------------------------------------------------------------
+
+// Tablets en horizonal y escritorios normales
+//    ------------------------------------------------------------------------- /
+@media (max-width: 1024px) {
+	// body { background: green; }
+	.section-content { padding: 3% 3%; }
+}
+//    ------------------------------------------------------------------------- */
+
+//  // Móviles en horizontal o tablets en vertical
+@media (max-width: 768px) { 
+	body {
+		// background: red;
+		font-size: 13px;
+
+		.bt-menu { display: block; }
+
+		&.wrapper { width: 100%; }
+
+		.main-nav li { line-height: 3; }
+
+		.options { display: none;  }
+
+		#modalLogin .content, #modalLogin .content form { width: 95%; }
+	}
+}
+//    ------------------------------------------------------------------------- /
+
+// Móviles en vertical   
+@media (max-width: 480px) { }
+// ------------------------------------------------------------------------- */
