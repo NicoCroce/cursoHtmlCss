@@ -9,16 +9,16 @@ body {
 
 	.one { background: rgba(255, 0, 0, 0.52); }
 
-	.container {
-		width: 500px; height: 300px; background: rgba(0, 0, 0, 0.2);
-		&.two { 
-			background: #43D242;
-			.one { 
-				background: rgba(65, 0, 255, 0.52); 
-				// &:hover { background: white; }
-			}
-		}
-	}
+	// .container {
+	// 	width: 500px; height: 300px; background: rgba(0, 0, 0, 0.2);
+	// 	&.two { 
+	// 		background: #43D242;
+	// 		.one { 
+	// 			background: rgba(65, 0, 255, 0.52); 
+	// 			&:hover { background: white; }
+	// 		}
+	// 	}
+	// }
 
 	>div {
 		border-radius: 50px;

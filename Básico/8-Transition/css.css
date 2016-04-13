@@ -23,9 +23,7 @@ h1 {
 	height: 100px;
 	background: black;
 	margin: 50px;
-	transition: background 1s, border-radius .5s, ease, -webkit-transform 1s;
-	transition: background 1s, transform 1s, border-radius .5s, ease;
-	transition: background 1s, transform 1s, border-radius .5s, ease, -webkit-transform 1s;
+	transition: background 1s, transform 1s, border-radius .5s, -webkit-transform 1s;
 }
 
 .base:hover {
