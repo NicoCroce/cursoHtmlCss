@@ -9,8 +9,10 @@ p { color: red; font-weight: bold; }
 /*.contenido .clase { border: 1px solid red; }*/
 
 /*Hermano*/
-/*p.clase { color: green; }
-*/
+/*p.clase { color: green; */
+
+
+
 /*////////////////*/
 /*Selectores avanzados*/
 /*////////////////*/
@@ -25,7 +27,7 @@ p { color: red; font-weight: bold; }
 /*div > p { color:  #00FFE9; background: grey; }*/
 
 
-/*[nico="curso"] { color: blue; font-weight: 600; }*/
+/*[nico*="curso"] { color: blue; font-weight: 600; }*/
 
 /*p:hover { background: black; color: white;}*/
 
