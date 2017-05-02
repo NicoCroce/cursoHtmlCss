@@ -1,15 +1,14 @@
-p { color: red; font-weight: bold; }
+/*p { color: red; font-weight: bold; }
 #id { color: black; }
-.clase { color: yellow; }
+.clase { color: yellow; }*/
 
 /*Hermano*/
-/*.clase.uno { background: grey; }*/
+/*3 */     /*#nico.uno { background: red; }*/
+/*1 */    /*.clase.uno { background: grey; }*/
+/*2*/    /*p.clase { color: green; */
 
 /*Hijo*/
 /*.contenido .clase { border: 1px solid red; }*/
-
-/*Hermano*/
-/*p.clase { color: green; */
 
 
 
@@ -30,6 +29,10 @@ p { color: red; font-weight: bold; }
 /*[nico*="curso"] { color: blue; font-weight: 600; }*/
 
 /*p:hover { background: black; color: white;}*/
+
+/*p:before { content: ''; display: block; width: 20px; height: 20px; background: rebeccapurple; }
+*/
+/*p:after { content: ''; display: block; width: 20px; height: 20px; background: rebeccapurple; }*/
 
 hr { margin: 50px 0; }
 a { line-height: 50px; }
