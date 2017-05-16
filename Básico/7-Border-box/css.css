@@ -6,11 +6,14 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 }
 
 .container { 
-	width: 50%; background: rgba(0, 0, 0, 0.2); margin: 0 auto; overflow: auto
+	width: 50%; background: rgba(0, 0, 0, 0.2); margin: 0 auto; /*overflow: auto*/
 }
+
+/*.container:after { content: ''; clear: both; display: block; }*/
 
 .block {
 	width: 50%;
+	/*display: inline-block;*/
 	float: left;
     /*padding: 20px;*/
     text-align: justify;
@@ -19,7 +22,7 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 hr { margin: 50px 0; }
 a { line-height: 50px; }
 
-//*************************************    SECCIÓN  TEMAS    *************************************
+/*************************************    SECCIÓN  TEMAS    *************************************
 	* Mostrar resultado con 'inline'
 	* Aplicar padding.
 	* Aplicar overflow la padre
