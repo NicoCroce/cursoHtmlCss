@@ -7,6 +7,7 @@ $char: b;
 * { margin: 0; padding: 0; }
 
 body {
+	$char: a;
 	h1 { color: white; 
 		font-weight: bold; 
 		text-align: center; 
@@ -60,17 +61,17 @@ body {
 }
 	
 	//************    ejemplo    ***************
-	
-	// @each $animal, $color, $cursor in (puma, black, default),
- //                                  	 (dog, blue, pointer),
- //                                  	 (tiger, white, move) {
-	// 	.item-#{$cont} {
-	// 		background-image: url('/images/#{$animal}.png');
-	// 		border: 2px solid $color;
-	// 		cursor: $cursor;
-	// 	}
-	// 	$cont: $cont +1;
-	// }
+//	$cont: 1;
+//	@each $animal, $color, $cursor in (puma, green, default),
+//                                  	  (dog, blue, pointer),
+//                                  	  (tiger, red, move) {
+//		.item-#{$cont} {
+//			background: url('/images/#{$animal}.png');
+//			border: 5px solid $color;
+//			cursor: $cursor;
+//		}
+//		$cont: $cont +1;
+//	}
 	
 	//************************************************************************************
 
