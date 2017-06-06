@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; border: 0; }
+* { margin: 0; padding: 0; border: 0; box-sizing: border-box; }
 
 h1 { color: #D8D8D8; font-weight: bold; text-align: center; 
 	text-shadow: 1px 1px 1px #505050; font-size: 25px; 
@@ -9,7 +9,7 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 	width: 50%; background: rgba(0, 0, 0, 0.2); margin: 0 auto; /*overflow: auto*/
 }
 
-/*.container:after { content: ''; clear: both; display: block; }*/
+.container:after { content: ''; clear: both; display: block; }
 
 .block {
 	width: 50%;

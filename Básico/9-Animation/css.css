@@ -9,7 +9,7 @@ h1 { color: white; font-weight: bold; text-align: center; text-shadow: 1px 1px 1
 .one { 
 	background: rgba(255, 0, 0, 0.52); 
 	animation-name: animOne;
-	animation-duration: 1s;
+	animation-duration: 5s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
@@ -20,6 +20,7 @@ h1 { color: white; font-weight: bold; text-align: center; text-shadow: 1px 1px 1
 	animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 .three:hover { 
 	background: rgba(0, 0, 255, 0.52);
 	animation: animThree 2s ease infinite;

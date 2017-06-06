@@ -23,11 +23,12 @@ h1 {
 	height: 100px;
 	background: black;
 	margin: 50px;
-	transition: background 1s, transform 1s, border-radius .5s, -webkit-transform 1s;
+	/*transition: background 1s, transform 1s, border-radius .5s, transform 1s;*/
+	transition: all 1s ease;
 }
 
 .base:hover {
-	-webkit-transform: scale3d(1.6, 1.6, 1.6);
+	transform: scale3d(1.6, 1.6, 1.6);
 	transform: scale3d(1.6, 1.6, 1.6);
 }
 
