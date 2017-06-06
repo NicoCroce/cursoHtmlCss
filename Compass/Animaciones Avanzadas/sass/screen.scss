@@ -18,7 +18,8 @@
     height: 300px; width: 370px; background: black; border-radius: 5px; border: 1px solid #AFAFAF; position: relative; overflow: hidden;
     .img { 
         width: 100%; height: 100%;
-        @include transition(all .3s ease);        
+        @include transition(all .3s ease);
+        transition: all .3s ease;      
     } 
     .box {
         line-height: 6; text-align: center; position: absolute; width: 100%;

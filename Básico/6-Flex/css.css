@@ -6,32 +6,45 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 }
 
 .container { 
-	width: 50%; height: 300px; background: rgba(0, 0, 0, 0.2); 
-	margin: 0 auto; display: flex; flex-direction: row; flex-wrap: wrap; 
+	width: 60%; min-height: 400px; background: rgba(0, 0, 0, 0.2); 
+	margin: 0 auto; display: flex; /*flex-direction: row;*/ /*flex-wrap: wrap; */
+	flex-flow: row wrap;
+	/*justify-content: space-around;*/
+	/*align-items: center;*/
+	/*align-content: stretch;*/
 }
 
-.base { width: 100px; height: 100px; text-align: center; line-height: 6; }
-.one { background: rgba(255, 0, 0, 0.52) }
-.two { background: rgba(0, 255, 0, 0.52) }
-.three { background: rgba(0, 0, 255, 0.52) }
+.base { width: 100px; height: 100px; text-align: center; line-height: 6; box-shadow: 0 0 15px -3px black;
+    background: #bdfddd; 
+}
+
+.base:nth-child(1) { height: 120px; }
+.base:nth-child(2) { height: 80px; }
+.base:nth-child(3) { height: 130px; }
+.base:nth-child(4) { height: 160px; }
+
 
 hr { margin: 50px 0; }
 a { line-height: 50px; }
 
 
-.container { justify-content: center; align-items: baseline; }
+/*.container { justify-content: center; align-items: baseline; }*/
 
-//*************************************    SECCIÓN  TEMAS    *************************************
+/*************************************    SECCIÓN  TEMAS    *************************************
 	* Display - Padre
 	* Flex-direction - Padre
 	* Flex-wrap - Padre
 	* Flex-flow - Padre  -- Sustituye a flex-direction flex-wrap
-	* Justify-content - Padre
-	* Align-items - Padre
-	* Align-content
+	* Justify-content - Padre 
+	* Align-items - Padre  / Alinea elementos
+	* Align-content - Padre       / Alinea filas
+	* Align-self - Hijo    / Alinea cada elemento.
 	* Order - Hijos
 	* Flex-grow - Hijo
 	* Flex-shrink	
-	* Flex-basis - Hijo -- Determina espacio a ocupar.	 
-	* Align-self - Hijo 	 
+	* Flex-basis - Hijo -- Determina espacio a ocupar.	  	 
 //************************************************************************************
+
+//https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+//https://www.yunbitsoftware.com/blog/2017/03/30/flexbox-css3-tutorial-descripcion-ejemplos-html/

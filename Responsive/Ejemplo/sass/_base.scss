@@ -1,5 +1,5 @@
 * { text-decoration: none; margin: 0; padding: 0;  
-	@include box-sizing(border-box); list-style: none;
+	box-sizing: border-box; list-style: none;
 }
 
 html, body { height: 100%; width: 100%; }
@@ -15,7 +15,7 @@ a { color: #EAEAEA; text-transform: uppercase; font-size: 0.8em; font-family: sa
 h1 { 
 	text-align: center; font-size: 1.3em; background: rgb(34, 115, 202);
     color: white; padding: 25px 0; margin: 30px 0;
-    @include box-shadow(0 -5px rgba(62, 62, 62, 0.61) inset);
+    box-shadow: 0 -5px rgba(62, 62, 62, 0.61) inset;
     &:first-of-type { margin-top: 0; }
 }
 
@@ -28,7 +28,7 @@ h1 {
 .bg-page { 
 	background: rgba(0,0,0,0.7); width: 100%; height: 100%; position: fixed; opacity: 0;
 	z-index: -10;  visibility: hidden;
-	@include transition(all .3s ease);
+	transition: all .3s ease;
 	&.visible { opacity: 1; z-index: 10;  visibility: visible; }
 }
 
@@ -38,15 +38,15 @@ h1 {
 	    ul { overflow: auto; }
 	li {
 		display: inline-block; color: #929292; padding: 0 30px; cursor: pointer;
-		@include transition(all .5s ease);
+		transition: all .5s ease;
 		&:last-of-type { 
 			float: right; background: #2273CA;
 			&:hover { background: $color-blue; }
 		}
-		@include box-shadow(0 -5px #49A1FF inset);
+		box-shadow: 0 -5px #49A1FF inset;
 		&:hover {
 			background: #2F55AF;
-			@include box-shadow(0 -5px #CA229E inset); 
+			box-shadow: 0 -5px #CA229E inset;
 		}		
 	}
 }
@@ -55,7 +55,7 @@ h1 {
 
 .section-content { 
 	padding: 4% 5%;
-	@include box-shadow(0 0 10px #717171);
+	box-shadow: 0 0 10px #717171;
     margin-top: -2px;
     .section-products { 
     	display: flex; flex-wrap: wrap; justify-content: space-around;
@@ -66,7 +66,7 @@ h1 {
 
 .menu-mobile {
 	height: 200%; position: fixed; z-index: 10; width: 70%; background: rgb(24, 24, 26);
-	@include transition(all .4s ease);
+	transition: all .4s ease;
 	@include opacity(1);
 	&.hidden { 
 		@include translate3d(-100%, 0, 0);
@@ -76,18 +76,18 @@ h1 {
 
 .bt-menu { 
 	width: 25px; cursor: pointer; z-index: 101; position: absolute; top: 10px; left: 10px;
-	@include transition(all .3s ease);
+	transition: all .3s ease;
 	div	{
-		@include transition(all .3s ease);
+		transition: all .3s ease;
 		height: 2px; background: $color-blue; margin-bottom: 5px;
 		&:last-child { margin: 0; }
 	}
 	&.active { 
-		@include transform3d(rotate3d(0, 0, 1, 180deg));
+		transform: rotate3d(0, 0, 1, 180deg);
 		div {
 			background: $color-blue;
-			&:nth-child(1){ @include transform3d(rotate3d(0, 0, 1, 31deg) translate3d(0, 3px, 0)); margin-left: 10px; width: 18px; }
-			&:nth-child(3){ @include transform3d(rotate3d(0, 0, 1, -31deg) translate3d(0, -3px, 0)); margin-left: 10px; width: 18px; }
+			&:nth-child(1){ transform: rotate3d(0, 0, 1, 31deg) translate3d(0, 3px, 0); margin-left: 10px; width: 18px; }
+			&:nth-child(3){ transform: rotate3d(0, 0, 1, -31deg) translate3d(0, -3px, 0); margin-left: 10px; width: 18px; }
 		}
 	}
 }
@@ -98,9 +98,9 @@ h1 {
 	li { 
 		a {
 			display:block; color:#EAEAEA; padding: 15px 20px; position:relative; box-shadow: 0px -10px 7px -7px rgba(253, 202, 46, 0) inset;
-		    @include transition(all .3s ease-in .1s);
+		    transition: all .3s ease-in .1s;
 		    &:before {
-		    	@include transition(all .3s ease-in);
+		    	transition: all .3s ease-in;
 		    	content:""; display:block; position:absolute; left:50%; bottom:0; 
 			    height:2px; width:0; background: $color-blue;
 		    }
@@ -139,7 +139,7 @@ footer { height: 150px; background: rgb(34, 115, 202); margin-top: 30px; }
 	z-index: 99999;
 	opacity:0; 
 	visibility: hidden;
-	@include transition(all .6s ease);
+	transition: all .6s ease;
 	&:target { opacity: 1; visibility: visible; }
 	.content { 
 		width: 80%; height: 80%; display: flex;
