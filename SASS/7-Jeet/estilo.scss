@@ -1,0 +1,49 @@
+@import 'node_modules/jeet/scss/index';
+
+* { margin: 0; padding: 0; }
+
+/*main { height: 100vh; position: relative; }*/
+
+.container {
+	width: 100%;
+	/*1.1*/	@include clearfix();
+	/*8*/	/*@include align();*/
+	/*9*/	/*@include center(1000px, 20px);*/
+			/*@include uncenter();*/
+	/*11*/	/*@include debug($color: blue, $important: true);*/
+	.base {
+		height: 100px; background: red; margin: 10px 0;
+		/*1*/	 //@include column(1/4, $cycle: 4);
+		/*2*/ 	//@include column(1/4, $offset: 1/4);
+		
+		/*3*/ 	//@include column(1/4, $cycle:4, $gutter: 10);
+		
+		/*4*/ 	//@include span(1/4, $cycle:4);
+		
+		/*5*/ 	//@include column(1/4, $cycle:4);
+				//@include move(1/4);
+		
+		/*6*/	/*@media screen and (max-width: 600px) {
+					@include stack();
+				}*/
+		
+		/*7*/ 	/*@include unmove();*/
+	}
+}
+
+hr { margin-top: 5%; }
+
+/*
+
+1- Solo column.  Agregar $cycle:4;
+1.1- clearfix. Visibilidad por parte del padre.
+2- Explicar offset. Desplazameinto relativo al espacio que ocupa. 
+3- Espaciado
+4- Span: no posee separación.
+5- move:  Desplaza a los elementos relativo al espacio. Similar a offset pero más preciso.
+6- stack: Deja al elemento 100% de ancho.
+7- unmove: elimina las propiedades de move.
+8- align: centra verticalmente. Descomentar estilos de main.
+9- center: centra en el eje x.
+10- debug: agrega color a los elementos. 
+*/
