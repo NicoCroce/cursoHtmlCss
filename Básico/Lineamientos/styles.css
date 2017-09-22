@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; }
+
+ul { list-style: none; }
+
+.wrapper { max-width: 900px; margin: 0 auto; display: block; padding: 0 100px; }
+
+h1, h2, h3, span, a, label, p { font-family: 'Roboto', sans-serif; color: #424242 }
+
+a, span, label { display: inline-block; }
+
+h1 { font-size: 2em; padding: 30px 0; }
+
+h1.main-title { color: #CDDC39; }
+
+header { background: #005f63; }
+
+header nav { background: #003539; }
+
+header nav ul li { display: inline-block; transition: all .3s ease; }
+
+header nav ul li:hover { box-shadow: 0 -5px 0 0 #CDDC39 inset; }
+
+header nav ul li a { color: white; display: inline-block; padding: 15px 25px; transition: all .3s ease; min-width: 100px; }
+
+header nav ul li:hover a { color: #CDDC39; }
+
+.card { position: relative; padding: 15px; box-shadow: 0 5px 16px -4px black; margin-bottom: 50px; }
+
+.card h2 { font-size: 20px; margin-bottom: 15px; display: inline-block; }
+
+.card .share { float: right; cursor: pointer; }
+
+.card .share .net { position: absolute; top: -27px; right: 0; opacity: 0; transition: all .3s ease; visibility: hidden; padding-bottom: 15px; }
+
+.card .share:hover .net { opacity: 1; visibility: visible; }
+
+.card .share a { padding: 10px; opacity: 0; transition: all .3s ease; border-radius: 50%;  transform: translate3d(0, -5px, 0); }
+
+.card .share:hover .net a { transform: translate3d(0,0,0); }
+
+.card .share:hover a:nth-child(1) { opacity: 1; opacity: 1; transition: transform .3s ease .1s, opacity .3s ease .1s, background .3s, color .3s; }
+.card .share a:nth-child(1):hover { background: #365899; color: white; transition-delay: 0s; }
+
+.card .share:hover a:nth-child(2) { opacity: 1; opacity: 1; transition: transform .3s ease .2s, opacity .3s ease .2s, background .3s, color .3s; }
+.card .share a:nth-child(2):hover { background: #993654; color: white; transition-delay: 0s; }
+
+.card .share:hover a:nth-child(3) { opacity: 1; transition: transform .3s ease .3s, opacity .3s ease .3s, background .3s, color .3s; }
+.card .share a:nth-child(3):hover { background: #1da1f2; color: white; transition-delay: 0s; }
+
+/* 
+header nav ul li:first-of-type a { padding-left: 0; } */

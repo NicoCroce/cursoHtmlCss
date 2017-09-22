@@ -2,29 +2,36 @@
 
 * { margin: 0; padding: 0; }
 
-/*main { height: 100vh; position: relative; }*/
+main { height: 100vh; position: relative; }
 
 .container {
 	width: 100%;
 	/*1.1*/	@include clearfix();
-	/*8*/	/*@include align();*/
-	/*9*/	/*@include center(1000px, 20px);*/
+	/*8*/	//@include align();
+	/*9*/	//@include center(1000px, 20px);
 			/*@include uncenter();*/
-	/*11*/	/*@include debug($color: blue, $important: true);*/
+	/*11*/	//@include debug($color: blue, $important: true);
 	.base {
 		height: 100px; background: red; margin: 10px 0;
-		/*1*/	 //@include column(1/4, $cycle: 4);
-		/*2*/ 	//@include column(1/4, $offset: 1/4);
+		/*1*/	//@include column(1/4, $cycle: 4);
+		/*2*/ 	//@include column(1/4, $offset: 1/4, $cycle: 4);
 		
-		/*3*/ 	//@include column(1/4, $cycle:4, $gutter: 10);
+		/*3*/ 	//@include column(1/4, $cycle:4, $gutter: 20);
 		
 		/*4*/ 	//@include span(1/4, $cycle:4);
 		
 		/*5*/ 	//@include column(1/4, $cycle:4);
 				//@include move(1/4);
-		
+				
+				/*@media screen and (max-width: 1000px) {
+					//@include stack();
+					//@include span(1/2, $cycle: 2);
+					//background: blue;
+				}*/
+
 		/*6*/	/*@media screen and (max-width: 600px) {
-					@include stack();
+					//@include stack();
+					@include column(1/1);
 				}*/
 		
 		/*7*/ 	/*@include unmove();*/
