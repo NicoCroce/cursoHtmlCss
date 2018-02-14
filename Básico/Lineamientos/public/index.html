@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Ninja UI">
+    <meta name="application-name" content="Ninja UI">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#005f63">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1 class="main-title">Lineamientos</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="">Ayuda</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="bgPage" class="bg-page"></div>
+            <div id="btMenu" class="bt-menu" onclick="openMenu()">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+                <div class="third-line"></div>
+            </div>
+            <div id="menuMobile" class="menu-mobile">
+                <ul class="nav-bar-menu">
+                    <li class="active">
+                        <a class="bt-section" title="">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="bt-section" title="">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="bt-section" title="">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper">
+        <aside>
+            <h1>Algún título para comentar</h1>
+        </aside>
+        <section class="most-important">
+            <div>
+                <div class="img">
+                    <p class="more-info">Muestra más información</p>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <p class="more-info">Muestra más información</p>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <p class="more-info">Muestra más información</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Noticia</h2>
+            <div class="share">
+                <span class="icon-share"></span>
+                <div class="net">
+                    <a class="icon-facebook"></a>
+                    <a class="icon-instagram"></a>
+                    <a class="icon-twitter"></a>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore neque error ab, id accusamus magni, ipsum
+                optio debitis incidunt amet corporis distinctio architecto! Placeat id, inventore corrupti neque quidem minus!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore neque error ab, id accusamus magni, ipsum
+                optio debitis incidunt amet corporis distinctio architecto! Placeat id, inventore corrupti neque quidem minus!</p>
+        </section>
+        <section class="card">
+            <h2>Noticia</h2>
+            <div class="share">
+                <span class="icon-share"></span>
+                <div class="net">
+                    <a class="icon-facebook"></a>
+                    <a class="icon-instagram"></a>
+                    <a class="icon-twitter"></a>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore neque error ab, id accusamus magni, ipsum
+                optio debitis incidunt amet corporis distinctio architecto! Placeat id, inventore corrupti neque quidem minus!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore neque error ab, id accusamus magni, ipsum
+                optio debitis incidunt amet corporis distinctio architecto! Placeat id, inventore corrupti neque quidem minus!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="table">
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore neque error ab.</p>
+                </div>
+                <div>
+                    <ul class="networks">
+                        <li>
+                            <a href="" class="icon-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="" class="icon-instagram"></a>
+                        </li>
+                        <li>
+                            <a href="" class="icon-twitter"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="subs" class="subs" onclick="closeSubs()">
+        <p>Conviértete en un NINJA</p>
+    </section>
+    <script>
+        function openMenu() {
+            var element = document.getElementsByTagName("body")[0];
+            element.classList.toggle("menu-is-open");
+        }
+
+        function closeSubs() {
+            var element = document.getElementById("subs");
+            element.classList.toggle("sub-is-hidden");
+        }
+    </script>
+</body>
+
+</html>

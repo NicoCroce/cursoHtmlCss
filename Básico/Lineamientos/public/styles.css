@@ -1,0 +1,126 @@
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; }
+
+ul { list-style: none; }
+
+.wrapper { max-width: 900px; margin: 0 auto; display: block; padding: 0 5%; }
+
+h1, h2, h3, span, a, label, p { font-family: 'Roboto', sans-serif; color: #424242 }
+
+a, span, label { display: inline-block; }
+
+h1 { font-size: 2em; padding: 15px 0; }
+
+h1.main-title { color: #CDDC39; }
+
+header, footer { background: #005f63; }
+
+header nav { background: #003539; }
+
+header nav ul li { display: inline-block; transition: all .3s ease; }
+
+header nav ul li:hover { box-shadow: 0 -5px 0 0 #CDDC39 inset; }
+
+header nav ul li a { color: white; display: inline-block; padding: 15px 25px; transition: all .3s ease; min-width: 100px; }
+
+header nav ul li:hover a { color: #CDDC39; }
+
+.card { position: relative; padding: 15px; box-shadow: 0 5px 16px -4px black; margin-bottom: 50px; }
+
+.card h2 { font-size: 20px; margin-bottom: 15px; display: inline-block; }
+
+.card .share { float: right; cursor: pointer; }
+
+.card .share .net { position: absolute; top: -27px; right: 0; opacity: 0; transition: all .3s ease; visibility: hidden; padding-bottom: 15px; }
+
+.card .share:hover .net { opacity: 1; visibility: visible; }
+
+.card .share a { padding: 10px; opacity: 0; transition: all .3s ease; border-radius: 50%;  transform: translate3d(0, -5px, 0); }
+
+.card .share:hover .net a { transform: translate3d(0,0,0); }
+
+.card .share:hover a:nth-child(1) { opacity: 1; opacity: 1; transition: transform .3s ease .1s, opacity .3s ease .1s, background .3s, color .3s; }
+.card .share a:nth-child(1):hover { background: #365899; color: white; transition-delay: 0s; }
+
+.card .share:hover a:nth-child(2) { opacity: 1; opacity: 1; transition: transform .3s ease .2s, opacity .3s ease .2s, background .3s, color .3s; }
+.card .share a:nth-child(2):hover { background: #993654; color: white; transition-delay: 0s; }
+
+.card .share:hover a:nth-child(3) { opacity: 1; transition: transform .3s ease .3s, opacity .3s ease .3s, background .3s, color .3s; }
+.card .share a:nth-child(3):hover { background: #1da1f2; color: white; transition-delay: 0s; }
+
+.most-important { display: table; width: 100%; table-layout: fixed; margin-bottom: 50px; }
+.most-important >div { display: table-cell; padding: 0 10px; }
+.most-important >div:first-of-type { padding-left: 0; }
+.most-important >div:last-of-type { padding-right: 0; }
+
+.more-info { position: absolute; bottom: -90px; background: rgba(0, 0, 0, 0.48); width: 100%; padding: 20px; 
+    text-align: center; color: white; transition: all .3s ease; font-size: 14px;
+}
+
+.img { background: url(./ninja.png); height: 200px; background-size: 44%; background-repeat: no-repeat; background-position: center; position: relative; overflow: hidden; cursor: pointer; box-shadow: 0 0 11px -2px black; } 
+
+.img:hover .more-info { bottom: 0; }
+
+footer { padding: 20px 0; }
+footer div.table { display: table; width: 100%; table-layout: fixed; }
+footer div.table >div { display: table-cell; padding: 0 20px; }
+footer div.table >div:first-of-type { padding-left: 0; }
+footer div.table >div:last-of-type { padding-right: 0; text-align: right; }
+footer div.table >div p { color: white; font-size: 14px;  text-align: justify; }
+footer .networks li { display: inline-block; }
+footer .networks li:not(:first-of-type) { margin-left: 20px; }
+footer .networks li a { color: white; }
+
+.subs { position: fixed; top: 121px; z-index: 1000; right: 0; padding: 20px; background: #673AB7; box-shadow: 0 8px 10px -5px black, -8px 0 10px -7px black; transition: all .3s ease; }
+.subs >p { color: white; }
+.subs.sub-is-hidden { transform: translate3d(110%, 0, 0); }
+
+
+.bt-menu { width: 25px; cursor: pointer; z-index: 101; float: right; transition: all 0.3s ease; position: relative; top: 7px; }
+
+.menu-mobile .nav-bar-menu { position: relative; top: 70px; }
+.menu-mobile .nav-bar-menu li { padding: 5% 15%; }
+.menu-mobile .nav-bar-menu li.active { background: rgba(255, 255, 255, 0.25); }
+.menu-mobile .nav-bar-menu li a { color: white; text-transform: uppercase; vertical-align: middle;  }
+.menu-mobile { height: 200%; position: fixed; z-index: 100; width: 70%; background: #003539; top: 0; right: 0; opacity: 0; transform: translate3d(100%, 0, 0); transition: all .3s; }
+
+.bg-page { background: rgba(0, 0, 0, 0.6); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9; visibility: hidden; }
+
+
+.menu-is-open .menu-mobile { opacity: 1; transform: translate3d(0, 0, 0); }
+.menu-is-open .bg-page { background: rgba(0, 0, 0, 0.6); visibility: visible; }
+
+
+.bt-menu div { -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; height: 2px; background: rgb(255, 255, 255); margin-bottom: 5px; }
+.bt-menu div:last-child { margin: 0; }
+.menu-is-open .bt-menu { transform: rotate3d(0, 0, 1, 180deg); }
+.menu-is-open .bt-menu div { background: rgb(202, 202, 202); }
+.menu-is-open .bt-menu div:nth-child(1) { transform: rotate3d(0, 0, 1, 31deg) translate3d(0, 3px, 0); margin-left: 10px; width: 18px; }
+.menu-is-open .bt-menu div:nth-child(3) { transform: rotate3d(0, 0, 1, -31deg) translate3d(0, -3px, 0); margin-left: 10px; width: 18px; }
+
+
+@media(max-width: 425px ){
+    body { font-size: 12px; }
+    body.menu-is-open { overflow: hidden; }
+    header { position: fixed; width: 100%; z-index: 100; padding: 15px 0; }
+    main, footer { position: relative; top: 59px; }
+
+    header nav { display: none; }
+
+    h1.main-title { display: inline-block; padding: 0; }
+
+    .most-important { display: block; }
+    .most-important >div { display: block; padding: 0; }
+    .most-important >div:not(:first-of-type) { margin-top: 30px; }
+
+    .card .share:hover a:nth-child(1) { background: #365899; color: white; }
+    .card .share:hover a:nth-child(2) { background: #993654; color: white; }
+    .card .share:hover a:nth-child(3) { background: #1da1f2; color: white; }
+    
+    footer div.table { display: block; }
+    footer div.table >div { display: block; }
+
+    footer div.table >div:last-of-type { text-align: center; margin-top: 50px; font-size: 30px; padding: 0; }
+
+    .subs { bottom: 0; top: inherit; left: 0; text-align: center; box-shadow: 0 -10px 10px -5px; }
+    .subs.sub-is-hidden { transform: translate3d(0, 120%, 0); }
+}
