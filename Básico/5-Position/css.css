@@ -17,7 +17,7 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 .two { background: rgba(0, 255, 0, 0.52) }
 .three { background: rgba(0, 0, 255, 0.52) }
 
-.container:after { content: ''; display: block; clear: both; }
+/* .container:after { content: ''; display: block; clear: both; } */
 
 /*.inside { width: 100px; height: 100px; background: black;}*/
 
