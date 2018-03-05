@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; outline: none; box-sizing: border-box;  }
+
+body { font-family: sans-serif; margin: 20px; }
+
+input[type="text"] { border: none; background: #e6e6e6; border-radius: 1px; padding: 15px 17px 10px 17px; box-shadow: 0 1px 0 0 #b4b4b4; }
+
+.input-container { position: relative;  display:  inline-block; }
+
+.input-container input ~ label { pointer-events: none; transition: all .3s ease; }
+
+.input-container input ~ label[class*="input-"] { position: absolute; left: 17px; top: 13px; font-size: 12px; }
+.input-container input ~ label.input-placeholder { top: 16px; color: #9a9a9a; }
+
+.input-container input[type="text"]:focus + label.input-label, 
+.input-container input[type="text"]:valid + label.input-label { transform: translate3d(0, -10px, 0); font-size: 10px; }
+
+
+.input-container input[type="text"] ~ label.input-placeholder { opacity: 0; }
+.input-container input[type="text"]:focus:not(:valid) ~ label.input-placeholder { opacity: 1; }
+
+.input-container:after { content: ''; display: block; width: 0; margin: 0 auto; transition: all .5s ease; box-shadow: 0px -1px #d44b50; height: 1px; position: relative; z-index: 1; margin-top: 1px; }
+.input-element.input-error .input-container:after { width: 100%; }
+.input-element.input-error .input-container { border: none; }
+
+.input-element.input-error input[type="text"] ~ label.input-label  { color: #d44b50; }
+
+.input-element >p { color: #d44b50; font-size: 10px; opacity: 0; transition: opacity .3s ease; }
+.input-element.input-error >p { opacity: 1; }
