@@ -1,4 +1,5 @@
 .sass-cache/
+SASS/*.css
 *.css.map
 estilo.css
 node_modules
