@@ -1,30 +1,46 @@
-// Directivas
-$color: #005165 !global;
-$size: 20px;
-$class: "base";
-$var: 3;
+$bgColorH1: #717171;
+$maxWidth: 90%;
+$newClass: "container";
+$paddingWrapper: 20px;
 
-// ******************S
 * { margin: 0; padding: 0; }
 
-body {
-	h1 { color: white; font-weight: bold; text-align: center; text-shadow: 1px 1px 1px #505050; font-size: 25px; text-decoration: underline; background: #717171; padding: 25px;}
+html, body { height: 100%; }
 
-	.#{$class} { 
-		width: $size*3; height: ($size + 2px)*$var; background: black; margin: 50px; display: inline-block;
-		&:hover { background: $color; cursor: pointer;}
+body {
+	height: 100%;
+	main { max-width: $maxWidth; margin: 0 auto; height: calc(100% - 200px) }
+
+	h1 { color: white; text-align: center; font-size: 25px; background: $bgColorH1; padding: 25px;}
+
+	.customClass {
+		&:after { content: ""; display: block; width: 100%; height: 2px; background: red; }
 	}
 
-	.base-new {
-		@extend .#{$class};
-		border-radius: 30px;
+	.#{$newClass} {
+		margin: 30px $paddingWrapper * 6;
+
+		$bgColorH1: transparent;
+
+		p { 
+			padding: 20px;
+			&.important { font-size: 20px; background: $bgColorH1; @warn $bgColorH1; }
+		}
+		&.second {
+			@extend .customClass;
+			background: #e0e7ec;
+		}
+		&.action {
+			transition: box-shadow .3s ease; cursor: pointer;
+			&:hover { box-shadow: 0 0 5px 0 black; }
+		}
 	}
 
 	a { margin-top: 44px; display: block; }
 
-	//Muestra los valores
-	@debug #{$class};
-	@warn $size;
+		//Muestra los valores
+		@debug #{$newClass};
+		@warn $bgColorH1;
 }
 
 //*******************    SECCIÓN  Explicar ******************
@@ -32,5 +48,6 @@ body {
 	// * Extend
 	// * @debug 
 	// * @warn 
+	// *  comentar $bgColorH1 dentro de .#{$newClass} {
 
 //************************************************************************************
