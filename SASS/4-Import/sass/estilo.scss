@@ -1,0 +1,48 @@
+// Ejecutar:
+// > node-sass -w sass -o estilo
+// "sass" es el folder con todos los archivos .sass.
+// "estilo" es el output.
+
+@import "core/variables";
+
+* { margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+	height: 100%;
+	main { max-width: $maxWidth; margin: 0 auto; height: calc(100% - 200px) }
+
+	h1 { color: white; text-align: center; font-size: 25px; background: $bgColorH1; padding: 25px;}
+
+	.customClass {
+		&:after { content: ""; display: block; width: 100%; height: 2px; background: red; }
+	}
+
+	.#{$newClass} {
+		margin: 30px $paddingWrapper * 6;
+
+		$bgColorH1: transparent;
+
+		p { 
+			padding: 20px;
+			&.important { font-size: 20px; background: $bgColorH1; }
+		}
+		&.second {
+			@extend .customClass;
+			background: #e0e7ec;
+		}
+		&.action {
+			transition: box-shadow .3s ease; cursor: pointer;
+			&:hover { box-shadow: 0 0 5px 0 black; }
+		}
+	}
+
+	a { margin-top: 44px; display: block; }
+}
+
+//*******************    SECCIÓN  Explicar ******************
+
+	// * Explicar estrucutra de carpetas.
+
+//************************************************************************************
