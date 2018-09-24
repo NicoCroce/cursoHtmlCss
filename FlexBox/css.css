@@ -35,16 +35,18 @@ a { line-height: 50px; }
 	* Flex-direction - Padre
 	* Flex-wrap - Padre
 	* Flex-flow - Padre  -- Sustituye a flex-direction flex-wrap
-	* Justify-content - Padre 
-	* Align-items - Padre  / Alinea elementos
-	* Align-content - Padre       / Alinea filas
+	* Justify-content - Padre / Alinea los elementos en relación al eje principal.
+	* Align-items - Padre  / Alinea a cada item en relación al eje secundario de la fila.
+	* Align-content - Padre       / Alinea los elementos en relación al eje secundario, pero solo afecta cuando tiene multilíneas.
 	* Align-self - Hijo    / Alinea cada elemento.
 	* Order - Hijos
 	* Flex-grow - Hijo
-	* Flex-shrink	
+	* Flex-shrink Hijo   
 	* Flex-basis - Hijo -- Determina espacio a ocupar.	  	 
 //************************************************************************************
 
 //https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 //https://www.yunbitsoftware.com/blog/2017/03/30/flexbox-css3-tutorial-descripcion-ejemplos-html/
+
+//https://ed.team/blog/guia-definitiva-de-flexbox-2-flex-basis-flex-frow-flex-shrink

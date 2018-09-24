@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.container { display: flex; flex-flow: row wrap; justify-content: space-between; }
+
+
+.container >div.element { width: 30%; font-size: 25px; text-align: center; line-height: 60px; color: white; }
+
+.container >div.element:nth-child(1) { background: #9FA8DA; }
+.container >div.element:nth-child(2) { background: #7986CB; }
+.container >div.element:nth-child(3) { background: #5C6BC0; }
+.container >div.element:nth-child(4) { background: #3F51B5; }
+.container >div.element:nth-child(5) { background: #3949AB; }
+.container >div.element:nth-child(6) { background: #303F9F; }
+.container >div.element:nth-child(7) { background: #283593; }
