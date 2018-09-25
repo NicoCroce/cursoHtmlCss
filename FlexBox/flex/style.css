@@ -1,0 +1,83 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+main {
+    width: 500px; height: 500px; display: flex; background-color: rgb(187, 187, 187);
+}
+
+main > div { background: rgb(0, 53, 102); flex-basis: 200px; }
+
+main > div:nth-child(even) { background-color: rgb(183, 252, 209);}
+
+
+/* 
+    BASIS
+
+    Unidades de tamaño de cada item dependiendo del eje princial.
+    * Si la dirección es ROW, el eje es horizontal por lo que BASIS equivale a width.
+    * Si la dirección es COLUMN, el eje es vertical por lo que BASIS equivale a height.
+*/
+
+
+
+
+
+
+/* GROW
+
+Puede crecer por unidades. Dichas unidades se calculan de la siguiente manera:
+
+Espacio disponible / sumatoria de valores de GROW = UNIDAD DE MEDIDA DE CRECIMIENTO
+
+*/
+
+/*              
+        main > div { flex-grow: 1; }
+
+        main > div:nth-child(2) {
+            flex-grow: 2;
+        }                 
+*/
+
+/* 
+    Espacio disponible: 500px (contenedor) - 400px (items (100px) * 4)  IGUAL = 100px.
+    Sumatoria de Valores de grow (items): primero = 1, segundo = 2. tercero = 1, cuarto = 1. TOTAL = 5.
+
+    100 / 5 = 20px;
+
+    Todos van a tener un valor de 120px de ancho pero el segundo de 140px, porque tiene el doble de unidad de crecimiento.
+
+*/
+
+
+
+
+
+/* SHRINK
+
+Puede crecer por unidades. Dichas unidades se calculan de la siguiente manera:
+
+Espacio disponible / sumatoria de valores de GROW = UNIDAD DE MEDIDA DE CRECIMIENTO
+
+*/
+    
+        /* 
+        
+        main > div { flex-basis: 200px; flex-shrink: 1; }
+
+        main > div:nth-child(2) {
+            flex-shrink: 2;
+        }
+        
+        */      
+        
+
+
+/* 
+    Espacio disponible: 500px (contenedor) - 800px (items (200px) * 4)  IGUAL = -300px.
+    Sumatoria de Valores de shrink (items): primero = 1, segundo = 2. tercero = 1, cuarto = 1. TOTAL = 5.
+
+    -300 / 5 = -60px;
+
+    Todos van a tener un valor de 140px de ancho pero el segundo de 80px, porque tiene el doble de unidad de disminución.
+
+*/
