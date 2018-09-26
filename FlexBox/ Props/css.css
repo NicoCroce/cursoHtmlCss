@@ -1,9 +1,10 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-.container { display: flex; flex-flow: row wrap; justify-content: space-between; }
+.container { display: flex; height: 600px; 
+    background: grey; }
 
 
-.container >div.element { width: 30%; font-size: 25px; text-align: center; line-height: 60px; color: white; }
+.container >div.element { flex-basis: 30%; height: 100px; font-size: 25px; text-align: center; line-height: 60px; color: white }
 
 .container >div.element:nth-child(1) { background: #9FA8DA; }
 .container >div.element:nth-child(2) { background: #7986CB; }
@@ -12,3 +13,37 @@
 .container >div.element:nth-child(5) { background: #3949AB; }
 .container >div.element:nth-child(6) { background: #303F9F; }
 .container >div.element:nth-child(7) { background: #283593; }
+
+
+
+
+/* ORDER */
+
+/* .container >div.element:nth-child(1) { order: 1; }
+.container >div.element:nth-child(2) { order: 2; }
+.container >div.element:nth-child(3) { order: 3; }
+.container >div.element:nth-child(4) { order: 4; }
+.container >div.element:nth-child(5) { order: 5; }
+.container >div.element:nth-child(6) { order: 6; }
+.container >div.element:nth-child(7) { order: 3; }  */
+
+
+
+
+
+
+
+/*************************************    SECCIÓN  TEMAS    *************************************
+	* Display - Padre
+	* Flex-direction - Padre
+	* Flex-wrap - Padre
+	* Flex-flow - Padre  -- Sustituye a flex-direction flex-wrap
+	* Justify-content - Padre / Alinea los elementos en relación al eje principal.
+	* Align-items - Padre  / Alinea a cada item en relación al eje secundario de la fila.
+	* Align-content - Padre / Alinea los elementos en relación al eje secundario, pero solo afecta cuando tiene multilíneas.
+	* Align-self - Hijo    / Alinea cada elemento.
+	* Order - Hijos
+	* Flex-grow - Hijo
+	* Flex-shrink Hijo   
+	* Flex-basis - Hijo -- Determina espacio a ocupar.	  	 
+//************************************************************************************

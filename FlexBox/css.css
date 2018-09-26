@@ -14,8 +14,8 @@ h1 { color: #D8D8D8; font-weight: bold; text-align: center;
 	/*align-content: stretch;*/
 }
 
-.base { width: 100px; height: 100px; text-align: center; line-height: 6; box-shadow: 0 0 15px -3px black;
-    background: #bdfddd; 
+.base { height: 100px; text-align: center; line-height: 6; box-shadow: 0 0 15px -3px black;
+    background: #bdfddd;  flex: 0 1 200px;
 }
 
 .base:nth-child(1) { height: 120px; }

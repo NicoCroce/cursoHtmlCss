@@ -4,7 +4,7 @@ main {
     width: 500px; height: 500px; display: flex; background-color: rgb(187, 187, 187);
 }
 
-main > div { background: rgb(0, 53, 102); flex-basis: 200px; }
+main > div { background: rgb(0, 53, 102); flex-basis: 100px; }
 
 main > div:nth-child(even) { background-color: rgb(183, 252, 209);}
 
