@@ -7,8 +7,11 @@ $paddingWrapper: 20px;
 
 html, body { height: 100%; }
 
+//%ninja { background: red; }
+
 body {
-	height: 100%;
+	//@extend %ninja;
+	height: 100%; 
 	main { max-width: $maxWidth; margin: 0 auto; height: calc(100% - 200px) }
 
 	h1 { color: white; text-align: center; font-size: 25px; background: $bgColorH1; padding: 25px;}
@@ -24,7 +27,7 @@ body {
 
 		p { 
 			padding: 20px;
-			&.important { font-size: 20px; background: $bgColorH1; @warn $bgColorH1; }
+			&.important { font-size: 20px; background: $bgColorH1; /* @warn $bgColorH1; */ }
 		}
 		&.second {
 			@extend .customClass;
@@ -39,15 +42,16 @@ body {
 	a { margin-top: 44px; display: block; }
 
 		//Muestra los valores
-		@debug #{$newClass};
-		@warn $bgColorH1;
+		/* @debug #{$newClass};
+		@warn $bgColorH1; */
 }
 
 //*******************    SECCIÓN  Explicar ******************
 
 	// * Extend
+	// * % Define ele stilo pero no lo procesa.
 	// * @debug 
 	// * @warn 
-	// *  comentar $bgColorH1 dentro de .#{$newClass} {
+	// *  comentar $bgColorH1 dentro de .#{$newClass}
 
 //************************************************************************************

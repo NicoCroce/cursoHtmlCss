@@ -1,0 +1,45 @@
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; }
+li { list-style: none; }
+
+html, body { height: 100%; }
+
+.wrapper { width: 90%;  margin: 0 auto; }
+
+body { display: flex; flex-flow: row wrap; 
+    background-image: url(http://nolisoli.ph/wp-content/uploads/2017/04/nolisoli-health-space-office-work-stress-5-1024x683.jpg);
+    background-repeat: no-repeat; background-size: cover; font-family: sans-serif; 
+}
+
+header, footer { flex: 1 0 100%; }
+
+header { background: black; align-self: start; }
+
+div.container-main-aside { display: flex; background: rgba(255, 255, 255, 0.81); margin-top: 50px; }
+
+header >div.wrapper { display: flex; align-items: center;  }
+header h1 { color: white; }
+header h1, header nav { flex: 1 1 50%; }
+header nav ul { display: flex; }
+header nav ul li { flex: 1 1 auto; transition: box-shadow .3s ease;}
+header nav ul li:hover { box-shadow: 0 -5px 0 0 white inset; }
+header nav ul li a { display: block; text-align: center; line-height: 70px; color: white; }
+
+
+main { flex: 1 1 auto; padding: 0 50px; padding-top: 30px; }
+main section { margin-top: 30px; }
+main section:last-child { margin-bottom: 50px; }
+main section h2 { margin-bottom: 15px; }
+main section p { line-height: 30px; }
+
+aside { flex: 1 0 200px; background-color: rgba(199, 199, 199, 0.54); color: rgb(85, 85, 85); }
+aside article { padding: 15px; }
+aside article p { line-height: 30px; }
+aside article.ads {     height: 143px;
+    background: url(https://storage.googleapis.com/support-kms-prod/2xEzW6SOUYKuD5W9N4XxBUvtXu9RhJKsdMJ6);
+    background-size: cover; }
+
+footer { background-color: black; color: white; display: flex; align-items: center; padding: 50px 0; align-self: flex-end; }
+footer >div ul { display: flex; flex-flow: row wrap; justify-content: space-between; }
+
+footer >div ul li { flex: 0 1 20%; }
+footer >div ul li p { line-height: 30px; text-align: justify; }
