@@ -1,0 +1,17 @@
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; }
+li { list-style: none; }
+
+html, body { height: 100%; }
+
+.wrapper { width: 90%;  margin: 0 auto; }
+
+body { display: flex; flex-flow: row wrap; 
+    background-image: url(http://nolisoli.ph/wp-content/uploads/2017/04/nolisoli-health-space-office-work-stress-5-1024x683.jpg);
+    background-repeat: no-repeat; background-size: cover; font-family: $font-family; 
+}
+
+header, footer { flex: 1 0 100%; }
+
+
+
+div.container-main-aside { display: flex; background: $bg-main; margin-top: 50px; }

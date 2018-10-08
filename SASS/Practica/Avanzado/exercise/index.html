@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Mi página</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Section 1</a></li>
+                    <li><a href="">Section 2</a></li>
+                    <li><a href="">Section 3</a></li>
+                </ul>
+                <ul class="theme-list">
+                    <li onclick="setTheme('theme-1')"></li>
+                    <li onclick="setTheme('theme-2')"></li>
+                    <li onclick="setTheme('theme-3')"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper container-main-aside">
+        <main>
+            <section>
+                <h2>Sección</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, enim laborum inventore fuga deserunt
+                    nobis veniam, ea porro veritatis ipsam pariatur doloribus provident impedit distinctio non
+                    temporibus ad fugiat rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa
+                    sequi nisi similique blanditiis impedit doloremque veniam dolore expedita unde odit qui voluptas
+                    minus ad nemo, dolorum deleniti autem tempora?</p>
+            </section>
+            <section>
+                <h2>Sección</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, enim laborum inventore fuga deserunt
+                    nobis veniam, ea porro veritatis ipsam pariatur doloribus provident impedit distinctio non
+                    temporibus ad fugiat rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa
+                    sequi nisi similique blanditiis impedit doloremque veniam dolore expedita unde odit qui voluptas
+                    minus ad nemo, dolorum deleniti autem tempora?</p>
+            </section>
+        </main>
+        <aside>
+            <article class="ads">
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam repellendus mollitia accusantium
+                    voluptatum cum unde, iusto amet ducimus dolorum natus facilis optio accusamus veniam, doloremque
+                    quos est vero, dolores reiciendis.</p>
+            </article>
+        </aside>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus quis nisi eius
+                        similique
+                        voluptates error, doloribus odit labore, fugiat quod placeat earum hic iste soluta laboriosam
+                        sunt
+                        impedit
+                        quo?</p>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus quis nisi eius
+                        similique
+                        voluptates error, doloribus odit labore, fugiat quod placeat earum hic iste soluta laboriosam
+                        sunt
+                        impedit
+                        quo?</p>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus quis nisi eius
+                        similique
+                        voluptates error, doloribus odit labore, fugiat quod placeat earum hic iste soluta laboriosam
+                        sunt
+                        impedit
+                        quo?</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function setTheme(theme) {
+            var bodyElement = document.querySelector('body');
+            var classList = bodyElement.classList;
+            bodyElement.className = theme;
+        }
+    </script>
+</body>
+
+</html>

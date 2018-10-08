@@ -1,0 +1,8 @@
+header { background: $dark; align-self: start; }
+header >div.wrapper { display: flex; align-items: center;  }
+header h1 { color: $white; }
+header h1, header nav { flex: 1 1 50%; }
+header nav ul { display: flex; }
+header nav ul li { flex: 1 1 auto; transition: box-shadow .3s ease;}
+header nav ul li:hover { box-shadow: 0 -5px 0 0 $white inset; }
+header nav ul li a { display: block; text-align: center; line-height: 70px; color: $white; }
