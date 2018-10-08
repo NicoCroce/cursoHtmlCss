@@ -71,6 +71,44 @@ body {
 	//generar llamado mediante extend. Crear una clase nueva.
 }
 
+
+
+
+
+// Map with much breakpoints
+$breakpoints: (
+    small: 320px,
+    medium: 600px,
+    large: 768px
+);
+ 
+// Respond-To Mixin
+@mixin mq($breakpoint) {
+	@debug(map-has-key($breakpoints, $breakpoint));
+
+    @if map-has-key($breakpoints, $breakpoint) {
+        $value: map-get($breakpoints, $breakpoint);
+         
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    } @else {
+		@warn "Unknown `#{$breakpoint}` in $breakpoints";
+	} 
+}
+
+
+// Sass
+.mi-clase {
+	background-color: #f2f2f2;
+	 
+	@include mq(large) {
+		background-color: #666;
+	}
+}
+
+
+
 //*************************************    SECCIÓN  Ejemplo    *************************************
 
 	// * Comentar que los mixins pueden tener parámetros o no.
@@ -80,3 +118,47 @@ body {
 	// * Asignarle valores a los parámetros.
 
 //************************************************************************************
+
+
+$themes: (
+  theme1: theme-light,
+  theme2: theme-dark
+);
+
+$config: (
+  theme1: (
+    background: #f2f2f2,
+    color: #000
+  ),
+  theme2: (
+    background: #666,
+    color: #fff
+  )
+);
+
+
+// _functions.scss
+@function setStyle($map, $object, $style) {
+	@if map-has-key($map, $object) {
+	  @return map-get(map-get($map, $object), $style);
+	}
+	@warn "The key ´#{$object} is not available in the map.";
+	@return null;
+  }
+
+
+
+// _m-buttons.scss
+// 2.Base
+.m-button {
+	@each $key, $value in $themes {
+	  @if map-has-key($config, $key) {
+		.#{$value} & {
+		  background: setStyle($config, $key, background);
+		  color: setStyle($config, $key, color);
+		}
+	  } @else {
+		@warn "The key ´#{$key} isn’t defined in the map $config´"
+	  }
+	}
+  }
