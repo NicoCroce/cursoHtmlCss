@@ -1,4 +1,7 @@
-footer { background-color: $dark; color: $white; display: flex; align-items: center; padding: 50px 0; align-self: flex-end; }
+footer { 
+    background-color: $dark; display: flex; align-items: center; padding: 50px 0; align-self: flex-end; color: $white;
+    @include setTheme('footer');
+}
 footer >div ul { display: flex; flex-flow: row wrap; justify-content: space-between; }
 
 footer >div ul li { flex: 0 1 20%; }

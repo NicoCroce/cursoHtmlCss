@@ -1,0 +1,7 @@
+@function getStyle($theme, $element) { 
+	@if map-has-key($config, $theme) {
+	    @return map-get(map-get($config, $theme), $element);
+	}
+	@warn "The key ´#{$theme} is not available in the map.";
+	@return null;
+}

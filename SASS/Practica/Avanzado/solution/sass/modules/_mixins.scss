@@ -1,0 +1,13 @@
+@mixin setTheme($element, $subElement: '&'){
+    @each $theme, $class in $themes {
+        @if map-has-key($config, $theme) {
+            body.#{$class} #{$subElement} {
+                @each $prop, $value in getStyle($theme, $element) {
+                    #{$prop}: #{$value};
+                }
+            }
+        } @else {
+            @warn "The key ´#{$theme} isn’t defined in the map $config´"
+        }
+    }
+}
