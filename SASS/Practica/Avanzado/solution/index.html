@@ -20,6 +20,11 @@
                     <li><a href="">Section 2</a></li>
                     <li><a href="">Section 3</a></li>
                 </ul>
+                <ul class="theme-list">
+                    <li onclick="setTheme('theme-1')"></li>
+                    <li onclick="setTheme('theme-2')"></li>
+                    <li onclick="setTheme('theme-3')"></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -82,6 +87,13 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function setTheme(theme) {
+            var bodyElement = document.querySelector('body');
+            var classList = bodyElement.classList;
+            bodyElement.className = theme;
+        }
+    </script>
 </body>
 
 </html>
