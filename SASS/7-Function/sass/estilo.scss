@@ -20,7 +20,6 @@ $base_font-size: 16px;
 	}
 
 	@return $target / $context * 1em;
-   // Note: We need the "* 1em" there for Sass to correctly append the unit value. You can also use "+ 0em" for the same purpose.
 }
 
 body {
@@ -36,13 +35,13 @@ body {
 		@include set-w-h;
 		p { color: white; }
 		&.one { 
-			font-size: 32px;
+			//font-size: 32px;
 			.box {
 				@include set-w-h (50, 50);
 				background: grey;
 				width: toem(100px);
 				// Mostrar lo que ocurre si no se pasa el font-size
-				width: toem(100px, 32px);
+				//width: toem(100px, 32px);
 			}
 		}
 		&.two { 
