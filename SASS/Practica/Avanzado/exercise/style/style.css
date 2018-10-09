@@ -56,62 +56,49 @@ header {
   background: #202020;
   align-self: start;
   color: gainsboro; }
-
-header > div.wrapper {
-  display: flex;
-  align-items: center; }
-
-header h1, header nav {
-  flex: 1 1 50%; }
-
-header nav ul {
-  display: flex; }
-
-header nav ul li {
-  flex: 1 1 auto;
-  transition: box-shadow .3s ease; }
-
-header nav ul li:hover {
-  box-shadow: 0 -5px 0 0 gainsboro inset; }
-
-header nav ul li a {
-  display: block;
-  text-align: center;
-  line-height: 70px;
-  color: inherit; }
+  header > div.wrapper {
+    display: flex;
+    align-items: center; }
+  header h1, header nav {
+    flex: 1 1 50%; }
+  header nav ul {
+    display: flex; }
+    header nav ul li {
+      flex: 1 1 auto;
+      transition: box-shadow .3s ease; }
+      header nav ul li:hover {
+        box-shadow: 0 -5px 0 0 gainsboro inset; }
+      header nav ul li a {
+        display: block;
+        text-align: center;
+        line-height: 70px;
+        color: inherit; }
 
 main {
   flex: 1 1 auto;
   padding: 0 50px;
   padding-top: 30px; }
-
-main section {
-  margin-top: 30px; }
-
-main section:last-child {
-  margin-bottom: 50px; }
-
-main section h2 {
-  margin-bottom: 15px; }
-
-main section p {
-  line-height: 30px; }
+  main section {
+    margin-top: 30px; }
+    main section:last-child {
+      margin-bottom: 50px; }
+    main section h2 {
+      margin-bottom: 15px; }
+    main section p {
+      line-height: 30px; }
 
 aside {
   flex: 1 0 200px;
   background-color: rgba(199, 199, 199, 0.54);
   color: #555555; }
-
-aside article {
-  padding: 15px; }
-
-aside article p {
-  line-height: 30px; }
-
-aside article.ads {
-  height: 143px;
-  background: url(https://storage.googleapis.com/support-kms-prod/2xEzW6SOUYKuD5W9N4XxBUvtXu9RhJKsdMJ6);
-  background-size: cover; }
+  aside article {
+    padding: 15px; }
+    aside article p {
+      line-height: 30px; }
+    aside article.ads {
+      height: 143px;
+      background: url(https://storage.googleapis.com/support-kms-prod/2xEzW6SOUYKuD5W9N4XxBUvtXu9RhJKsdMJ6);
+      background-size: cover; }
 
 footer {
   background-color: #202020;
@@ -120,15 +107,12 @@ footer {
   padding: 50px 0;
   align-self: flex-end;
   color: gainsboro; }
-
-footer > div ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-
-footer > div ul li {
-  flex: 0 1 20%; }
-
-footer > div ul li p {
-  line-height: 30px;
-  text-align: justify; }
+  footer > div ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    footer > div ul li {
+      flex: 0 1 20%; }
+      footer > div ul li p {
+        line-height: 30px;
+        text-align: justify; }
