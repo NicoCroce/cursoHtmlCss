@@ -35,11 +35,11 @@ body {
 		@include set-w-h;
 		p { color: white; }
 		&.one { 
-			//font-size: 32px;
+			font-size: 32px;
 			.box {
 				@include set-w-h (50, 50);
 				background: grey;
-				width: toem(100px);
+				//width: toem(100px);
 				// Mostrar lo que ocurre si no se pasa el font-size
 				//width: toem(100px, 32px);
 			}
