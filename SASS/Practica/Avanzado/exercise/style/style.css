@@ -46,22 +46,20 @@ div.container-main-aside {
     .theme-list > li:hover {
       transform: scale3d(1.2, 1.2, 1.2); }
   .theme-list li:nth-child(1) {
-    background-color: black; }
-  .theme-list li:nth-child(2) {
     background-color: white; }
+  .theme-list li:nth-child(2) {
+    background-color: #453d6d; }
   .theme-list li:nth-child(3) {
-    background-color: #2887cb; }
+    background-color: black; }
 
 header {
   background: #202020;
-  align-self: start; }
+  align-self: start;
+  color: gainsboro; }
 
 header > div.wrapper {
   display: flex;
   align-items: center; }
-
-header h1 {
-  color: gainsboro; }
 
 header h1, header nav {
   flex: 1 1 50%; }
@@ -80,7 +78,7 @@ header nav ul li a {
   display: block;
   text-align: center;
   line-height: 70px;
-  color: gainsboro; }
+  color: inherit; }
 
 main {
   flex: 1 1 auto;
@@ -117,11 +115,11 @@ aside article.ads {
 
 footer {
   background-color: #202020;
-  color: gainsboro;
   display: flex;
   align-items: center;
   padding: 50px 0;
-  align-self: flex-end; }
+  align-self: flex-end;
+  color: gainsboro; }
 
 footer > div ul {
   display: flex;
