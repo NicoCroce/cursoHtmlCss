@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Servicios BBVA</h1>
+            <nav>
+                <ul>
+                    <li><a href="">GYM</a></li>
+                    <li><a href="">Comedor</a></li>
+                    <li><a href="">Coffee Points</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <section>
+            <div class="left">
+                <img src="gym.jpg" alt="gym">
+                <div class="card">
+                    <h3>Podés utilizar estas instalaciones dentro de 3 franjas horarias</h3>
+                    <div>
+                        <ul>
+                            <li><em>7:30</em> a <em>9:30</em> hs</li>
+                            <li><em>12:30</em> a <em>14:30</em> hs</li>
+                            <li><em>17:30</em> a <em>20:30</em> hs</li>
+                        </ul>
+                        <div>
+                            <a class="button" href="#inscription">Anotate YA!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Contamos con un gimnasio propio, ubicado en el primer piso, coordinado y asistido por profesionales
+                    de la educación física de la Red de Clubes Megatlón. Está disponible para todos los colaboradores
+                    con una cuota muy accesible.</p>
+                <h3>Cuenta con:</h3>
+                <ul>
+                    <li>Sala de musculación</li>
+                    <li>Espacio de entrenamiento funcional</li>
+                    <li>Máquinas de Cardio</li>
+                    <li>Clases</li>
+                    <li>Vestuarios y Duchas</li>
+                    <li>Lockers</li>
+                    <li>Hidratación</li>
+                </ul>
+            </div>
+        </section>
+        <section id="inscription">
+            <h2>Inscribite!</h2>
+            <form action="" class="card">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre</label>
+                    <input name='nombre' type='text' tabindex='1'>
+                    <label for="apellidos">Apellidos</label>
+                    <input name='apellidos' type='text' tabindex='2'>
+                </fieldset>
+                <fieldset>
+                    <label for="edad">Edad</label>
+                    <input type="radio" name="edad" id="" value="18-30">18-30
+                    <input type="radio" name="edad" id="" value="31-45">31-45
+                    <input type="radio" name="edad" id="" value="45-60">45-60
+                </fieldset>
+                <fieldset>
+                    <legend>Datos Adicionales</legend>
+                    <label for="rubro">Rubro</label>
+                    <select name="rubro" id="">
+                        <option value="value1">Sistemas</option>
+                        <option value="value2" selected>Ventas</option>
+                        <option value="value3">Comercial</option>
+                        <option value="value3">Datos</option>
+                        <option value="value3">UX</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="actividad">Actividad</label>
+                    <input type="checkbox" name="actividad" id="">Gym
+                    <input type="checkbox" name="actividad" id="">Funcionla
+                    <input type="checkbox" name="actividad" id="">Spinning
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
