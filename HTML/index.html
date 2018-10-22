@@ -24,20 +24,16 @@
     </header>
     <main class="wrapper">
         <section>
-            <div class="left">
+            <div>
                 <img src="gym.jpg" alt="gym">
                 <div class="card">
                     <h3>Podés utilizar estas instalaciones dentro de 3 franjas horarias</h3>
-                    <div>
-                        <ul>
-                            <li><em>7:30</em> a <em>9:30</em> hs</li>
-                            <li><em>12:30</em> a <em>14:30</em> hs</li>
-                            <li><em>17:30</em> a <em>20:30</em> hs</li>
-                        </ul>
-                        <div>
-                            <a class="button" href="#inscription">Anotate YA!</a>
-                        </div>
-                    </div>
+                    <ul>
+                        <li><em>7:30</em> a <em>9:30</em> hs</li>
+                        <li><em>12:30</em> a <em>14:30</em> hs</li>
+                        <li><em>17:30</em> a <em>20:30</em> hs</li>
+                    </ul>
+                    <a class="button" href="#inscription">Anotate YA!</a>
                 </div>
             </div>
             <div>
@@ -67,27 +63,27 @@
                     <input name='apellidos' type='text' tabindex='2'>
                 </fieldset>
                 <fieldset>
-                    <label for="edad">Edad</label>
-                    <input type="radio" name="edad" id="" value="18-30">18-30
-                    <input type="radio" name="edad" id="" value="31-45">31-45
-                    <input type="radio" name="edad" id="" value="45-60">45-60
+                    <legend>Edad</legend>
+                    <input type="radio" name="edad" id="low" value="18-30"><label for="low">18-30</label>
+                    <input type="radio" name="edad" id="medium" value="31-45"><label for="medium">31-45</label>
+                    <input type="radio" name="edad" id="high" value="45-60"><label for="high">45-60</label>
                 </fieldset>
                 <fieldset>
                     <legend>Datos Adicionales</legend>
                     <label for="rubro">Rubro</label>
-                    <select name="rubro" id="">
-                        <option value="value1">Sistemas</option>
-                        <option value="value2" selected>Ventas</option>
-                        <option value="value3">Comercial</option>
-                        <option value="value3">Datos</option>
-                        <option value="value3">UX</option>
+                    <select name="rubro" id="rubro">
+                        <option value="Sistemas">Sistemas</option>
+                        <option value="Ventas" selected>Ventas</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Datos">Datos</option>
+                        <option value="UX">UX</option>
                     </select>
                 </fieldset>
                 <fieldset>
-                    <label for="actividad">Actividad</label>
-                    <input type="checkbox" name="actividad" id="">Gym
-                    <input type="checkbox" name="actividad" id="">Funcionla
-                    <input type="checkbox" name="actividad" id="">Spinning
+                    <legend>Actividad</legend>
+                    <input type="checkbox" name="actividad" id="gym" value="Gym"><label for="gym">Gym</label>
+                    <input type="checkbox" name="actividad" id="funcional" value="Funcional"><label for="funcional">Funcional</label>
+                    <input type="checkbox" name="actividad" id="spinning" value="Spinning"><label for="spinning">Spinning</label>
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
