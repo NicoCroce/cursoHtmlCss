@@ -17,22 +17,23 @@
 /*////////////////*/
 
 /*El próximo p que se encuentren inmediantamente luego de un div, que se encuentra en el mismo nivel es decir que no es un hijo.*/
-/*div + p { color: blue; background: grey; }div + p { color: blue; background: grey; }*/
+/*section + p { color: blue; background: grey; }div + p { color: blue; background: grey; }*/
 
 /*Todos los p que se encuentren inmediantamente luego de un div, que se encuentra en el mismo nivel es decir que no es un hijo.*/
-/*div ~ p { color: green; background: grey; }*/
+/*section ~ p { color: green; background: grey; }*/
 
 /*Todos los p que son hijos de div.*/
-/*div > p { color:  #00FFE9; background: grey; }*/
+/* section > p { color:  rgb(56, 56, 56); background: rgb(196, 196, 196); padding: 10px; } */
 
 
-/*[class*="clase"] { color: blue; font-weight: 600; }*/
+/* [class*="clase"] { color: blue; font-weight: 600; } */
 
-/*p:hover { background: black; color: white;}*/
+/* p:hover { background: black; color: white;} */
 
 /* p:before { content: attr(newAttr);  } */
 
-/*p:after { content: ''; display: block; width: 20px; height: 20px; background: rebeccapurple; }*/
+/* p:before { content: ''; display: inline-block; width: 20px; height: 20px; background: rebeccapurple; margin-right: 10px; } */
 
+.card { max-width: 400px; padding: 15px; box-shadow: 0 0 15px -4px black; }
 hr { margin: 50px 0; }
 a { line-height: 50px; }
