@@ -1,3 +1,3 @@
 # Ejercicios
 
-### Eliminar CSS y lograr el mismo resultado
+### Eliminar CSS y lograr el mismo resultado en cada carpeta.
