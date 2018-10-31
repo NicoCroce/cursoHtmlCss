@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Gym BBVA</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Servicios BBVA</h1>
+            <nav>
+                <ul>
+                    <li><a href="">GYM</a></li>
+                    <li><a href="">Comedor</a></li>
+                    <li><a href="">Coffee Points</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <section>
+            <div>
+                <img src="gym.jpg" alt="gym">
+                <div class="card">
+                    <h3>Podés utilizar estas instalaciones dentro de 3 franjas horarias</h3>
+                    <ul>
+                        <li><em>7:30</em> a <em>9:30</em> hs</li>
+                        <li><em>12:30</em> a <em>14:30</em> hs</li>
+                        <li><em>17:30</em> a <em>20:30</em> hs</li>
+                    </ul>
+                    <a class="button" href="#inscription">Anotate YA!</a>
+                </div>
+            </div>
+            <div>
+                <p>Contamos con un gimnasio propio, ubicado en el primer piso, coordinado y asistido por profesionales
+                    de la educación física de la Red de Clubes Megatlón. Está disponible para todos los colaboradores
+                    con una cuota muy accesible.</p>
+                <h3>Cuenta con:</h3>
+                <ul>
+                    <li>Sala de musculación</li>
+                    <li>Espacio de entrenamiento funcional</li>
+                    <li>Máquinas de Cardio</li>
+                    <li>Clases</li>
+                    <li>Vestuarios y Duchas</li>
+                    <li>Lockers</li>
+                    <li>Hidratación</li>
+                </ul>
+            </div>
+        </section>
+        <section id="inscription">
+            <h2>Inscribite!</h2>
+            <form action="" class="card">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre</label>
+                    <input name='nombre' type='text' tabindex='1'>
+                    <label for="apellidos">Apellidos</label>
+                    <input name='apellidos' type='text' tabindex='2'>
+                </fieldset>
+                <fieldset>
+                    <legend>Edad</legend>
+                    <input type="radio" name="edad" id="low" value="18-30"><label for="low">18-30</label>
+                    <input type="radio" name="edad" id="medium" value="31-45"><label for="medium">31-45</label>
+                    <input type="radio" name="edad" id="high" value="45-60"><label for="high">45-60</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos Adicionales</legend>
+                    <label for="rubro">Rubro</label>
+                    <select name="rubro" id="rubro">
+                        <option value="Sistemas">Sistemas</option>
+                        <option value="Ventas" selected>Ventas</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Datos">Datos</option>
+                        <option value="UX">UX</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Actividad</legend>
+                    <input type="checkbox" name="actividad" id="gym" value="Gym"><label for="gym">Gym</label>
+                    <input type="checkbox" name="actividad" id="funcional" value="Funcional"><label for="funcional">Funcional</label>
+                    <input type="checkbox" name="actividad" id="spinning" value="Spinning"><label for="spinning">Spinning</label>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
