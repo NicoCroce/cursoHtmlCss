@@ -1,0 +1,168 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* 
+  SELECTOR: la etiqueta body
+  PROPS: Que el color de la fuente sea #555558 y el fondo sea bg.jpg.
+*/
+ { 
+   :#555558; 
+   : url('bg.jpg'); 
+  }
+
+
+/* 
+  SELECTOR: Quitar estilo a las listas.
+  PROPS: Sin estilos de en los elementos.
+*/
+ { : none; }
+
+
+/* 
+  SELECTOR: las etiquetas img, label, a
+*/
+ { display: inline-block; }
+
+
+/* SELECTOR: Todos los inputs de tipo "text" */
+/* PROPS: Sin bordes, color de fondo #efefef, padding 10px 15px, borde inferior de 2px color #b1b1b1,
+    100% de ancho y espaciado superior de 10px.
+*/
+ {
+  : none;
+  : #efefef;
+  : 10px 15px;
+  : 2px solid ;
+  : 100%;
+  : 10px;
+}
+
+/* 
+  SELECTOR: la clase "btn".
+  PROPS:  Espacio interno del elemento 10px 20px; Bordes redondeados 3px, sin decoración en texto, tamaño de la fuente 14, 
+  color de la fuente blanco, color de fondo #305990, 
+*/
+ {
+  padding: ;
+  background-color: ;
+  : 3px;
+  : none;
+  : 14px;
+}
+
+
+/* 
+  SELECTOR: todas las imágenes 
+  PROPS: ancho 90%, margen superior de 50px centrado y abajo 0, 
+*/
+ { 
+  : 90%;
+  margin: ;
+  transition: transform .3s ease;
+  display: block; 
+}
+
+
+/* 
+  SELECTOR:  la etiqueta main
+  PROPS: Ancho máximo de 400px, margen centrado, fondo blanco.
+*/
+ {     
+  : 400px;
+  margin: ;
+  : white;
+}
+
+
+/* 
+  SELECTOR: todos los h1
+  PROPS: texto justificado, alto de línea 33px, color de la fuente #444b88.
+*/
+ {
+  text-align: ;
+  : 33;
+  color: ;
+}
+
+
+/* 
+  SELECTOR: la etiqueta section con la clase card.
+  PROPS: Separación interna de 15px, sombra de 0 0 10px -3px, separación entre los demás elementos es de 20px.
+*/
+ {
+  : 15px;
+  : 0 0 10px -3px;
+  : 20px 0;
+}
+
+
+/* 
+  SELECTOR: La etiqueta section con hijo h3, La etiqueta div con hijo h3.
+  PROPS: Texto centrado  con márgenes 50px 0 20px
+*/
+ {
+  : center;
+  : 50px 0 20px;
+}
+
+
+/* 
+  SELECTOR: La etiqueta section con clase card que contiene una lista ul con la clase list con hijos directos li.
+  PROPS: Alto de línea 25px;
+*/
+ {
+  : 25px;
+}
+
+
+/* 
+  SELECTOR: La etiqueta section con clase card que contiene una lista ul con la clase list con hijos directos li tiene un before.
+  PROPS: Alto y ancho de 4px, color rojo y margen derecho 10px.
+*/
+ { content: ''; display: inline-block; : 4px; : 4px; : red; : 10px; }
+
+
+/* 
+  SELECTOR: id text
+  PROPS:  alto de línea 32px. Texto justificado.
+*/
+{     
+  : 32px;
+  : justify;
+}
+
+
+/* 
+  SELECTOR: Seleccionar todos los strong con un padre que tenga id "text".
+  PROPS: Colocar en mayúsculas, color blanco y fondo negro.
+*/
+ {     
+  : uppercase;
+  : white;
+  : black; 
+}
+
+
+/* 
+  SELECTOR: Al pasar sobre la imagen escalar la imagen a 1.1
+  PROPS: 
+*/
+{ transform: ; }
+
+
+/* 
+  SELECTOR: Seleccionar a todos los li hijos directos de ul que a la vez son hijos de un div con clase "buy".
+  PROPS: Posee un ancho de 1/3 y el texto centrado. 
+*/
+div.buy ul >li { 
+  display: inline-block; 
+  : calc((100% / 3) - 4px * 3); 
+  : center; }
+
+
+/* 
+  SELECTOR: Al pasar el cursor sobre todos los "a" que son hijos de un li que es hijo directo de un ul que es hijo  de un div con clase "buy".
+  PROPS: Color de fondo.
+*/
+div.buy ul >li a:hover {
+  : #134485
+}

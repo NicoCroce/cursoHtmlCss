@@ -1,0 +1,80 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { color:#555558; background: url(bg.jpg); }
+
+ul li { list-style: none; }
+
+img, label, a { display: inline-block; }
+
+input[type="text"] {
+  border: none;
+  background-color: #efefef;
+  padding: 10px 15px;
+  border-bottom: 2px solid #b1b1b1;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #305990;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+img { 
+  width: 90%;
+  margin: 50px auto 0;
+  transition: transform .3s ease;
+  display: block; 
+}
+
+main {     
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+}
+
+h1 {
+  text-align: justify;
+  line-height: 33px;
+  color: #444b88;
+}
+
+section.card {
+  padding: 15px;
+  box-shadow: 0 0 10px -3px;
+  margin: 20px 0;
+}
+
+section h3, div h3 {
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
+section.card ul.list > li {
+  line-height: 25px;
+}
+
+section.card ul.list > li:before { content: ''; display: inline-block; height: 4px; width: 4px; background: red; margin-right: 10px;  }
+
+#text {     
+  line-height: 32px;
+  text-align: justify;
+}
+
+#text strong {     
+  text-transform: uppercase;
+  color: white;
+  background: black; 
+}
+
+img:hover { transform: scale3d(1.1, 1.1, 1.1); }
+
+div.buy ul >li { display: inline-block; width: calc((100% / 3) - 4px * 3); text-align: center; }
+
+div.buy ul >li a:hover {
+  background-color: #134485
+}
